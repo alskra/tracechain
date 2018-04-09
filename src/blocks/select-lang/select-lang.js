@@ -12,14 +12,14 @@ const SelectLang = function () {
       s.$b.on('loaded.bs.select', function () {
         let $filterOption = $(this)
           .nextAll('.dropdown-menu').addClass(bemC(b, 'menu')).end()
-          .nextAll('.dropdown-toggle').removeClass('dropdown-toggle btn').addClass(bemC(b, 'toggle'))
+          .nextAll('.dropdown-toggle').removeClass('dropdown-toggle btn')
           .find('.filter-option').clone(true);
-        $(this).nextAll(bemS(b, 'toggle')).empty()
+        $(this).nextAll('.dropdown-toggle').empty()
           .append($filterOption)
           .append('<svg class="isvg-angle-d" role="img">\n' +
             '<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#isvg-angle-d"></use>\n' +
             '</svg>');
-      }).selectpicker({style: '', width: 'fit', container: 'body'});
+      }).selectpicker({style: bemC(b, 'toggle'), width: 'fit', container: 'body'});
     },
     bindUIActions: function () {
 

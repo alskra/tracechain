@@ -1,8 +1,5 @@
 .select-lang {
   vertical-align: top;
-  select {
-    clip: rect(0, 0, 0, 0);
-  }
 
   &__toggle {
     font-size: 14px;
@@ -72,4 +69,9 @@
       display: block !important;
     }
   }
+}
+
+select.select-lang {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
 }

@@ -125,6 +125,52 @@
 .footer__support {
   margin: 0 0 0 auto
 }
+.form-search {
+  display: -ms-flexbox;
+  display: flex
+}
+.form-search__input {
+  font-size: 0.875rem;
+  line-height: 1.15;
+  color: #99ceff;
+  width: 100%;
+  padding: 0.84063rem 2.75rem 0.84063rem 0.9375rem;
+  border: 0.0625rem solid rgba(153, 206, 255, 0.3);
+  background: rgba(5, 11, 31, 0.6);
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out
+}
+.form-search__input:-ms-input-placeholder {
+  color: rgba(153, 206, 255, 0.5)
+}
+.form-search__input::placeholder {
+  color: rgba(153, 206, 255, 0.5)
+}
+.form-search__input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.125rem #66b6ff
+}
+.form-search__btn {
+  font-size: 0.9375rem;
+  color: #99ceff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+  margin-left: -2.8125rem
+}
+.form-search__btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.125rem #66b6ff
+}
 .header {
   padding: 1.1875rem 0.625rem;
   background: linear-gradient(180deg, #f2f2f2 57.46%, #ebebeb 100%)
@@ -334,7 +380,7 @@
   font-size: 3.25rem
 }
 .section__header {
-  margin-bottom: 2.5rem
+  margin-bottom: 2.8125rem
 }
 .section__breadcrumb {
   margin-top: 2.1875rem
@@ -342,11 +388,18 @@
 .section__menu-user {
   margin-top: 2.75rem
 }
+.section__location {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%
+}
 .select-lang {
   vertical-align: top
-}
-.select-lang select {
-  clip: rect(0, 0, 0, 0)
 }
 .select-lang__toggle {
   font-size: 0.875rem;
@@ -416,6 +469,10 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   display: block!important
+}
+select.select-lang {
+  position: absolute;
+  clip: rect(0, 0, 0, 0)
 }
 .title {
   font-weight: 100;

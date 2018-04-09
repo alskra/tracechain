@@ -1,6 +1,6 @@
 .section {
   &__header {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   &__breadcrumb {
@@ -9,5 +9,16 @@
 
   &__menu-user {
     margin-top: 44px;
+  }
+
+  &__location {
+    font-size: 24px;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
   }
 }
