@@ -16,17 +16,14 @@
     &:hover {
       color: white;
     }
-    &:focus {
-      @include focus-default();
-    }
     .filter-option {
-      overflow: hidden;
       flex-grow: 1;
+      min-width: 0.2px;
 
       &-inner {
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
       }
     }
     .isvg-angle-d {
@@ -54,18 +51,15 @@
         color: $color-dark;
         background: #ddd;
       }
-      &:focus {
-        outline: 0;
-      }
       &.active {
         color: white;
         background: $color-blue-1;
       }
     }
     .text {
+      white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      white-space: nowrap;
       display: block !important;
     }
   }

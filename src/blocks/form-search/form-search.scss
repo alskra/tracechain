@@ -13,9 +13,6 @@
     &::placeholder {
       color: rgba($color-blue, 0.5);
     }
-    &:focus {
-      @include focus-default();
-    }
   }
 
   &__btn {
@@ -32,8 +29,5 @@
     transition: $btn-transition;
     cursor: pointer;
     margin-left: -45px;
-    &:focus {
-      outline: 0;
-    }
   }
 }

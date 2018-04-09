@@ -476,3 +476,13 @@ template {
 [hidden] {
   display: none !important;
 }
+
+// https://github.com/WICG/focus-visible
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.js-focus-visible .focus-visible {
+  outline: 2px solid $color-blue;
+  outline-offset: -1px;
+}

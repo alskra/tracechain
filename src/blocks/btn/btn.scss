@@ -1,0 +1,21 @@
+.btn {
+  $b: &;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  user-select: none;
+  cursor: pointer;
+  transition: $btn-transition;
+  &:disabled {
+    cursor: default;
+    opacity: .3;
+  }
+}

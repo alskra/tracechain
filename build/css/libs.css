@@ -255,6 +255,13 @@ template {
 [hidden] {
   display: none!important
 }
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none
+}
+.js-focus-visible .focus-visible {
+  outline: 0.125rem solid #99ceff;
+  outline-offset: -0.0625rem
+}
 .container {
   width: 100%;
   padding-right: 0.625rem;
@@ -12061,7 +12068,7 @@ select.selectpicker {
   height: 1em
 }
 .isvg-refresh {
-  width: 1.29351em;
+  width: 1.29412em;
   height: 1em
 }
 .isvg-search {
