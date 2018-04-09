@@ -1,0 +1,45 @@
+.menu {
+  display: flex;
+  overflow: hidden;
+
+  &__item {
+    color: #636363;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: color $btn-transition-base;
+    @include hover-focus {
+      color: #141414;
+      text-decoration: none;
+    }
+    & + & {
+      margin-left: 30px;
+    }
+
+    &-icon {
+      flex: none;
+      margin-right: 5px;
+      &.isvg-buy {
+        font-size: 17px;
+      }
+      &.isvg-metaapps {
+        font-size: 14px;
+      }
+      &.isvg-metawallet {
+        font-size: 17px;
+      }
+      &.isvg-settings {
+        font-size: 17px;
+      }
+    }
+
+    &-lbl {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

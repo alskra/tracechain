@@ -1,0 +1,22 @@
+.footer {
+  font-size: 12px;
+  line-height: (14/12);
+
+  &__inner {
+    padding: 35px 0;
+    border-top: 1px solid rgba($color-blue, 0.3);
+  }
+
+  &__logo {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  &__copyright {
+    margin: 0;
+  }
+
+  &__support {
+    margin: 0 0 0 auto;
+  }
+}

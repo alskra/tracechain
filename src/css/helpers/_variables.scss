@@ -1,0 +1,89 @@
+// Colors
+$color-blue: #99CEFF;
+$color-blue-1: #2F7BC2;
+$color-dark: #636363;
+
+// Customization Bootstrap
+$spacer: 5px;
+$spacers: (
+  0: 0,
+  5: ($spacer * 1),
+  10: ($spacer * 2),
+  15: ($spacer * 3),
+  20: ($spacer * 4),
+  25: ($spacer * 5),
+  30: ($spacer * 6),
+  35: ($spacer * 7),
+  40: ($spacer * 8),
+  45: ($spacer * 9),
+  50: ($spacer * 10),
+  55: ($spacer * 11),
+  60: ($spacer * 12),
+  65: ($spacer * 13),
+  70: ($spacer * 14),
+  75: ($spacer * 15),
+  80: ($spacer * 16),
+  85: ($spacer * 17),
+  90: ($spacer * 18),
+  95: ($spacer * 19),
+  100: ($spacer * 20),
+
+  5-inv: ($spacer * -1),
+  10-inv: ($spacer * -2),
+  15-inv: ($spacer * -3),
+  20-inv: ($spacer * -4),
+  25-inv: ($spacer * -5),
+  30-inv: ($spacer * -6),
+  35-inv: ($spacer * -7),
+  40-inv: ($spacer * -8),
+  45-inv: ($spacer * -9),
+  50-inv: ($spacer * -10),
+  55-inv: ($spacer * -11),
+  60-inv: ($spacer * -12),
+  65-inv: ($spacer * -13),
+  70-inv: ($spacer * -14),
+  75-inv: ($spacer * -15),
+  80-inv: ($spacer * -16),
+  85-inv: ($spacer * -17),
+  90-inv: ($spacer * -18),
+  95-inv: ($spacer * -19),
+  100-inv: ($spacer * -20)
+);
+
+$body-color: #FFFFFF;
+$body-bg: #03081C;
+
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 1rem;
+$font-weight-base: 400;
+$line-height-base: (19/16);
+
+$headings-margin-bottom: 0.5rem;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+
+$container-max-widths: (
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+
+$grid-columns: 12;
+$grid-gutter-width: 20px;
+
+$transition-base: .2s ease-in-out;
+
+$btn-transition-base: .15s ease-in-out;
+$btn-transition: color $btn-transition-base, background-color $btn-transition-base, border-color $btn-transition-base, box-shadow $btn-transition-base;
+
+$input-transition-base: $btn-transition-base;
+$input-transition: $btn-transition;
+
+$focus-box-shadow: 0 0 0 2px darken($color-blue, 10%);

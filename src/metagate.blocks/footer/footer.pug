@@ -1,0 +1,20 @@
+include ../logo/logo
+
+mixin footer(data)
+  +b.FOOTER.footer&attributes(attributes)
+    if data === 'start'
+      .container-fluid.d-flex.align-items-start
+        +logo.__logo
+    else if data === 'inner'
+      .container-fluid
+        .row.align-items-end
+          .col-6
+            | ver 0.4.32
+          .col-6.d-flex.align-items-start
+            +b.A.action-support(href=js).__support
+              +isvg#dialog.__icon
+              +e.__text
+                small Have questions?
+                | Ask our support
+    else
+      block

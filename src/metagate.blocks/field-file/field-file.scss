@@ -1,0 +1,25 @@
+.field-file {
+  $b: &;
+  display: flex;
+  margin: 0;
+
+  &__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    &:focus ~ #{$b}__btn {
+      @include focus-default();
+    }
+  }
+
+  &__fake {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1 1 0;
+  }
+
+  &__btn {
+    flex: none;
+    margin-left: 10px;
+  }
+}

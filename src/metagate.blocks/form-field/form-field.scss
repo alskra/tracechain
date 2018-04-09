@@ -1,0 +1,26 @@
+@keyframes form-field-autofill {
+  to {
+    color: white;
+    background: rgba(5, 11, 31, 0.6);
+  }
+}
+
+.form-field {
+  vertical-align: top;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.25;
+  color: white;
+  padding: (55px - 22px*1.25 - 2)/2 15px;
+  border: 1px solid rgba(153, 206, 255, 0.3);
+  background: rgba(5, 11, 31, 0.6);
+  transition: $input-transition;
+  &:-webkit-autofill {
+    animation-name: form-field-autofill;
+    animation-fill-mode: both;
+  }
+  &:focus {
+    @include focus-default();
+    border-color: rgba(white, 0.5);
+  }
+}

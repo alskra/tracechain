@@ -1,0 +1,9 @@
+mixin breadcrumb(data, current)
+  +b.NAV.breadcrumb&attributes(attributes)(aria-label="breadcrumb")
+    +e.OL.__inner
+      each item, i in data
+        if i !== current
+          +e.LI.__item
+            +e.A.__item-link(href=js)= item
+        else
+          +e.LI.__item--active(aria-current="page")= item

@@ -1,0 +1,16 @@
+include ../logo/logo
+
+mixin footer
+  +b.FOOTER.footer&attributes(attributes)
+    .container-fluid
+      +e.__inner
+        .row
+          .col-6
+            +logo.__logo
+            +e.P.__copyright Copyright © 2018 #MetaHash. All Rights Reserved
+          .col-6.text-right
+            +b.A.action-support(href=js).__support
+              +isvg#dialog.__icon
+              +e.__text
+                small Have questions?
+                | Ask our support

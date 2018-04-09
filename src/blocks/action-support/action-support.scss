@@ -1,0 +1,26 @@
+.action-support {
+  font-size: 18px;
+  line-height: (21/18);
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  display: inline-flex;
+  vertical-align: top;
+  align-items: flex-start;
+
+  &__icon {
+    flex: none;
+    font-size: 33px;
+    margin-right: 12px;
+  }
+
+  &__text {
+    white-space: nowrap;
+    small {
+      font-size: 14px;
+      line-height: (16/14);
+      color: $color-blue;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.form-transfer {
+  &__label {
+    margin-bottom: 7px;
+  }
+
+  &__help {
+    vertical-align: top;
+    margin: 1px 0 7px;
+  }
+
+  &__arrow {
+    flex: none;
+    color: $color-blue;
+    width: 50px;
+    height: 55px;
+    transform: scale((22/50));
+    margin: 21px -25px 0;
+  }
+
+  &__info {
+    margin-top: 4px;
+  }
+}

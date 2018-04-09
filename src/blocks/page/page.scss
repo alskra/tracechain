@@ -1,0 +1,53 @@
+.page {
+  $b: &;
+  height: 100%;
+  ::selection {
+    color: white;
+    background-color: $color-blue-1;
+  }
+
+  &__body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    color: $body-color;
+    height: 100%;
+    background: url-img('promo-spiral.png') no-repeat 0 -30px fixed,
+    url-img('promo-planet.jpg') no-repeat 0 -30px fixed,
+    url-img('whatis-satelit.png') no-repeat right 185px top 290px fixed,
+    url-img('team-cloud.jpg') no-repeat 100% 100% fixed,
+    url-img('prefooter-explode.jpg') no-repeat 100% -30px fixed $body-bg;
+    background-blend-mode: normal, lighten, normal, lighten;
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      min-width: 1000px;
+      min-height: 100%;
+      padding-top: 70px;
+      overflow: hidden;
+    }
+  }
+
+  &__header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: $zindex-fixed;
+  }
+
+  &__main {
+    flex: 1 0 auto;
+    padding: 70px 0 40px;
+  }
+
+  &__footer {
+    flex: none;
+  }
+
+  &__logo {
+    font-size: 52px;
+  }
+}

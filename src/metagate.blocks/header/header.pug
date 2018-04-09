@@ -1,0 +1,11 @@
+include ../menu/menu
+
+mixin header
+  +b.HEADER.header&attributes(attributes)
+    +e.__inner
+      +e.BUTTON.__btn--back: +isvg#angle-left
+      +e.BUTTON.__btn--forward(disabled=''): +isvg#angle-left
+      +e.BUTTON.__btn--reload: +isvg#refresh
+      +e.__loc
+        +e.INPUT.__loc-field(type='text' value='/MetaGate/Create')
+      +menu.__menu

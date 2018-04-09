@@ -1,0 +1,28 @@
+.form-label {
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-blue;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  strong {
+    color: white;
+  }
+
+  &--lg {
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    text-transform: none;
+  }
+
+  &--md {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: none;
+  }
+}

@@ -1,0 +1,43 @@
+.menu-user {
+  $b: &;
+
+  &__inner {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 -20px;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    margin-left: 20px;
+
+    &--login {
+      flex-shrink: 1;
+      overflow: hidden;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-blue;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    transition: color $btn-transition-base;
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__icon {
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    transform:scale((16/18));
+    margin-right: 8px;
+  }
+}

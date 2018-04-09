@@ -1,0 +1,36 @@
+.breadcrumb {
+  font-weight: 100;
+  font-size: 24px;
+  line-height: (28/24);
+
+  &__inner {
+    @include list-unstyled;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+  }
+
+  &__item {
+    display: inline;
+    &:not(:first-child) {
+      &::before {
+        content: '/\0020';
+        color: $color-blue;
+        margin: 0 12px;
+      }
+    }
+
+    &--active {
+      cursor: default;
+    }
+
+    &-link {
+      color: $color-blue;
+      text-decoration: none;
+      transition: color $btn-transition-base;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
