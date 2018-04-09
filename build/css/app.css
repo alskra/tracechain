@@ -205,8 +205,8 @@
   list-style: none;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-  align-items: center;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin: 0 0 0 -1.25rem
 }
 .menu-user__item {
@@ -340,7 +340,10 @@
   margin-top: 2.1875rem
 }
 .section__menu-user {
-  margin-top: 2.625rem
+  margin-top: 2.75rem
+}
+.select-lang {
+  vertical-align: top
 }
 .select-lang select {
   clip: rect(0, 0, 0, 0)
