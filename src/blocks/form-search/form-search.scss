@@ -33,7 +33,7 @@
     cursor: pointer;
     margin-left: -45px;
     &:focus {
-      @include focus-default();
+      outline: 0;
     }
   }
 }

@@ -24,13 +24,14 @@ var SelectLang = function() {
     init: function init() {
       s = this.settings;
       this.bindUIActions();
-      s.$b.on('loaded.bs.select', function() {
-        var $filterOption = $(this).nextAll('.dropdown-menu').addClass(bemC(b, 'menu')).end().nextAll('.dropdown-toggle').removeClass('dropdown-toggle btn').find('.filter-option').clone(true);
-        $(this).nextAll('.dropdown-toggle').empty().append($filterOption).append('<svg class="isvg-angle-d" role="img">\n' + '<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#isvg-angle-d"></use>\n' + '</svg>');
+      s.$b.not(bemS(b, '', 'loaded')).on('loaded.bs.select', function() {
+        var $filterOption = $(this).nextAll('.dropdown-toggle').children('.filter-option');
+        $(this).addClass(bemC(b, '', 'loaded')).next('.dropdown-toggle').removeClass('dropdown-toggle btn').empty().append($filterOption).append('<svg class="isvg-angle-d" role="img">\n' + '<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#isvg-angle-d"></use>\n' + '</svg>').next('.dropdown-menu').addClass(bemC(b, 'menu'));
       }).selectpicker({
         style: bemC(b, 'toggle'),
         width: 'fit',
-        container: 'body'
+        container: 'body',
+        selectOnTab: true
       });
     },
     bindUIActions: function bindUIActions() {}

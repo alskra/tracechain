@@ -29,8 +29,8 @@ include ../blocks/menu-user/menu-user
               +e.__location Current Stats
             .col-5
               +b.FORM.form-search.__search(action='')
-                +e.INPUT.__input(type='text' placeholder='Search by Address / Txhash / Block / Token / Ens')
-                +e.BUTTON.__btn
+                +e.INPUT.__input(type='text' placeholder='Search by Address / Txhash / Block / Token / Ens' autocomplete='off')
+                +e.BUTTON.__btn(tabindex='-1')
                   +isvg#search
       .container-fluid
   +footer.__footer

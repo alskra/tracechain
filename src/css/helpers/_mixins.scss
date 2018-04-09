@@ -1,9 +1,10 @@
 // State
 @mixin focus-default($shadows...) {
-  //outline: 1px dotted;
+  //outline: 1px dotted darken($color-blue, 10%);
+  //outline-offset: 1px;
   //outline: 5px auto -webkit-focus-ring-color;
-  outline: 0;
-  box-shadow: $focus-box-shadow, $shadows;
+  //outline: 0;
+  //box-shadow: $focus-box-shadow, $shadows;
 }
 
 @mixin disabled {

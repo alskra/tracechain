@@ -145,10 +145,6 @@
 .form-search__input::placeholder {
   color: rgba(153, 206, 255, 0.5)
 }
-.form-search__input:focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.125rem #66b6ff
-}
 .form-search__btn {
   font-size: 0.9375rem;
   color: #99ceff;
@@ -168,8 +164,7 @@
   margin-left: -2.8125rem
 }
 .form-search__btn:focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.125rem #66b6ff
+  outline: 0
 }
 .header {
   padding: 1.1875rem 0.625rem;
@@ -417,10 +412,6 @@
 }
 .select-lang__toggle:hover {
   color: #fff
-}
-.select-lang__toggle:focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.125rem #66b6ff
 }
 .select-lang__toggle .filter-option {
   overflow: hidden;
