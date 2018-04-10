@@ -1,4 +1,5 @@
 .action-support {
+  $b: &;
   font-size: 18px;
   line-height: (21/18);
   color: white;
@@ -7,6 +8,12 @@
   display: inline-flex;
   vertical-align: top;
   align-items: flex-start;
+  &:hover {
+    #{$b}__icon {
+      transition: transform 10s ease-in-out 0.1s;
+      transform: rotateY(360deg);
+    }
+  }
 
   &__icon {
     flex: none;

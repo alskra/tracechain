@@ -36,6 +36,7 @@
     right: 0;
     left: 0;
     z-index: $zindex-fixed;
+    will-change: transform;
   }
 
   &__main {
@@ -46,6 +47,7 @@
 
   &__footer {
     flex: none;
+    will-change: transform;
   }
 
   &__logo {

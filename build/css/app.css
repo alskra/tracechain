@@ -10,6 +10,10 @@
   -ms-flex-align: start;
   align-items: flex-start
 }
+.action-support:hover .action-support__icon {
+  transition: transform 10s ease-in-out 0.1s;
+  transform: rotateY(360deg)
+}
 .action-support__icon {
   -ms-flex: none;
   flex: none;
@@ -414,7 +418,8 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030
+  z-index: 1030;
+  will-change: transform
 }
 .page__main {
   -ms-flex: 1 0 auto;
@@ -424,7 +429,8 @@
 }
 .page__footer {
   -ms-flex: none;
-  flex: none
+  flex: none;
+  will-change: transform
 }
 .page__logo {
   font-size: 3.25rem
