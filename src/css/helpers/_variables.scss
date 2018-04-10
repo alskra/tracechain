@@ -1,6 +1,8 @@
 // Colors
-$color-blue: #99CEFF;
-$color-blue-1: #2F7BC2;
+$color-body: #FFFFFF;
+$color-body-bg: #03081C;
+$color-link: #99CEFF;
+$color-primary: #2F7BC2;
 $color-dark: #636363;
 
 // Customization Bootstrap
@@ -50,14 +52,10 @@ $spacers: (
   100-inv: ($spacer * -20)
 );
 
-$body-color: #FFFFFF;
-$body-bg: #03081C;
-
 $font-family-base: 'Roboto', sans-serif;
 $font-size-base: 1rem;
 $font-weight-base: 400;
 $line-height-base: (19/16);
-
 $headings-margin-bottom: 0.5rem;
 
 $grid-breakpoints: (
@@ -67,23 +65,17 @@ $grid-breakpoints: (
   lg: 1024px,
   xl: 1280px
 );
-
 $container-max-widths: (
   sm: 576px,
   md: 768px,
   lg: 1024px,
   xl: 1280px
 );
-
 $grid-columns: 12;
 $grid-gutter-width: 20px;
 
 $transition-base: .2s ease-in-out;
-
 $btn-transition-base: .15s ease-in-out;
 $btn-transition: color $btn-transition-base, background-color $btn-transition-base, border-color $btn-transition-base, box-shadow $btn-transition-base;
-
 $input-transition-base: $btn-transition-base;
 $input-transition: $btn-transition;
-
-$focus-box-shadow: 0 0 0 2px darken($color-blue, 10%);

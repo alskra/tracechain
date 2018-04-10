@@ -7,7 +7,8 @@
     @include list-unstyled;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 0;
+    padding: 1px;
+    margin: -1px;
   }
 
   &__item {
@@ -15,7 +16,7 @@
     &:not(:first-child) {
       &::before {
         content: '/\0020';
-        color: $color-blue;
+        color: $color-link;
         margin: 0 12px;
       }
     }
@@ -25,7 +26,7 @@
     }
 
     &-link {
-      color: $color-blue;
+      color: $color-link;
       text-decoration: none;
       transition: color $btn-transition-base;
       &:hover {

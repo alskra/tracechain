@@ -35,7 +35,7 @@ include ../blocks/menu-user/menu-user
       .container-fluid
         .row
           .col-6
-            +b.TABLE.table-data.w-100
+            +b.TABLE.table-data
               thead
                 tr
                   th ID
@@ -45,9 +45,9 @@ include ../blocks/menu-user/menu-user
               tbody
                 tr
                   td 707
-                  td(style="overflow: hidden; /* text-overflow: ellipsis; */ word-wrap: break-word; max-width: 200px;") 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                  td 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
                   td 16 hours ago
                   td 1
-            +b.A.btn--blue(href=js)
+            +b.A.btn--primary.w-100(href=js)
               +e.__lbl Show more
   +footer.__footer
