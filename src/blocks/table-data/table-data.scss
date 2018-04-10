@@ -2,7 +2,8 @@
   font-size: 12px;
   line-height: (14/12);
   word-wrap: break-word;
-  width: 100%;
+  width: calc(100% + 20px);
+  margin: 0 -10px;
   th {
     font-weight: 700;
     text-transform: uppercase;
@@ -14,10 +15,17 @@
   th, td {
     vertical-align: baseline;
     &:first-child {
-      padding-left: 0;
+      //padding-left: 0;
     }
     &:last-child {
-      padding-right: 0;
+      //padding-right: 0;
+    }
+  }
+  tbody {
+    tr {
+      &:hover {
+        background: darken(#235D91, 15%);
+      }
     }
   }
 

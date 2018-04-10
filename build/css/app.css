@@ -757,7 +757,8 @@ select.select-outline {
   font-size: 0.75rem;
   line-height: 1.16667;
   word-wrap: break-word;
-  width: 100%
+  width: calc(100% + 1.25rem);
+  margin: 0 -0.625rem
 }
 .table-data th {
   font-weight: 700;
@@ -771,13 +772,8 @@ select.select-outline {
 .table-data th {
   vertical-align: baseline
 }
-.table-data td:first-child,
-.table-data th:first-child {
-  padding-left: 0
-}
-.table-data td:last-child,
-.table-data th:last-child {
-  padding-right: 0
+.table-data tbody tr:hover {
+  background: #143553
 }
 .table-data__warning {
   color: #fb5e5b;
