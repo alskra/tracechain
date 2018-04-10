@@ -3,7 +3,7 @@
   flex-direction: column;
 
   &__header {
-    padding: 20px 40px;
+    padding: 20px;
     background: rgba(47, 123, 194, 0.7);
   }
 
@@ -23,7 +23,7 @@
 
   &__body {
     flex-grow: 1;
-    padding: 25px 40px 30px;
+    padding: 20px;
     background: rgba(#235D91, 0.3);
 
     &-title {
