@@ -5,8 +5,10 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: inline-block;
+  display: inline-flex;
   vertical-align: top;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
   padding: 0;
   border: 0;
@@ -17,5 +19,45 @@
   &:disabled {
     cursor: default;
     opacity: .3;
+  }
+
+  &__lbl {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__ico {
+    flex: none;
+  }
+
+  &--blue {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    text-transform: uppercase;
+    padding: 17.5px 20px;
+    border: 0;
+    border-radius: 4px;
+    background: $color-blue-1;
+    @include not-disabled {
+      &:hover {
+        color: white;
+        background: darken($color-blue-1, 5%);
+      }
+      &:active {
+        background: darken($color-blue-1, 10%);
+      }
+    }
+
+    #{$b}__icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: top;
+      margin-left: 20px;
+      &.isvg-check-1 {
+        transform: scale((17/20));
+      }
+    }
   }
 }
