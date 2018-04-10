@@ -434,18 +434,12 @@
 .section__header {
   margin-bottom: 2.8125rem
 }
-.section__breadcrumb {
-  margin-top: 2.1875rem
-}
-.section__menu-user {
-  margin-top: 2.75rem
-}
 .section__location {
   font-size: 1.5rem;
   line-height: 1.75rem;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
   display: inline-block;
   vertical-align: top;
   max-width: 100%

@@ -94,9 +94,9 @@
         <section class="section">
           <header class="section__header">
             <div class="container-fluid">
-              <div class="row mb-40">
+              <div class="row mb-40 align-items-baseline">
                 <div class="col-8">
-                  <div class="row mx-25-inv">
+                  <div class="row mx-25-inv align-items-baseline">
                     <div class="col-auto px-25 mw-100">
                       <h1 class="title section__title">
                         <strong>Trace</strong>Chain</h1>
@@ -138,8 +138,8 @@
                   </nav>
                 </div>
               </div>
-              <div class="row align-items-center">
-                <div class="col-7">
+              <div class="row align-items-start">
+                <div class="col-7 align-self-center">
                   <div class="section__location">Current Stats</div>
                 </div>
                 <div class="col-5">
@@ -157,7 +157,25 @@
           </header>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-4">
+              <div class="col-6">
+                <table class="table-data w-100">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Hash</th>
+                      <th>Age</th>
+                      <th>Count</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>707</td>
+                      <td style="overflow: hidden; /* text-overflow: ellipsis; */ word-wrap: break-word; max-width: 200px;">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</td>
+                      <td>16 hours ago</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <a class="btn btn--blue" href="javascript:">
                   <span class="btn__lbl">Show more</span>
                 </a>

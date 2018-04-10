@@ -15,17 +15,17 @@ include ../blocks/menu-user/menu-user
     +b.SECTION.section
       +e.HEADER.__header
         .container-fluid
-          .row.mb-40
+          .row.mb-40.align-items-baseline
             .col-8
-              .row.mx-25-inv
+              .row.mx-25-inv.align-items-baseline
                 .col-auto.px-25.mw-100
                   +b.H1.title.__title #[strong Trace]Chain
                 .col-auto.px-25.mw-100
                   +breadcrumb(['Home', 'Blocks', 'Transactions'], 0).__breadcrumb
             .col-4.d-flex.flex-column.align-items-end
               +menu-user.__menu-user.mw-100
-          .row.align-items-center
-            .col-7
+          .row.align-items-start
+            .col-7.align-self-center
               +e.__location Current Stats
             .col-5
               +b.FORM.form-search.__search(action='')
@@ -34,7 +34,20 @@ include ../blocks/menu-user/menu-user
                   +isvg#search
       .container-fluid
         .row
-          .col-4
+          .col-6
+            +b.TABLE.table-data.w-100
+              thead
+                tr
+                  th ID
+                  th Hash
+                  th Age
+                  th Count
+              tbody
+                tr
+                  td 707
+                  td(style="overflow: hidden; /* text-overflow: ellipsis; */ word-wrap: break-word; max-width: 200px;") 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                  td 16 hours ago
+                  td 1
             +b.A.btn--blue(href=js)
               +e.__lbl Show more
   +footer.__footer

@@ -4,19 +4,19 @@
   }
 
   &__breadcrumb {
-    margin-top: 35px;
+    //margin-top: 35px;
   }
 
   &__menu-user {
-    margin-top: 44px;
+    //margin-top: 44px;
   }
 
   &__location {
     font-size: 24px;
     line-height: 28px;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
     display: inline-block;
     vertical-align: top;
     max-width: 100%;
