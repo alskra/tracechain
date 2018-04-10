@@ -424,6 +424,67 @@
 .page__logo {
   font-size: 3.25rem
 }
+.pagination {
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.25
+}
+.pagination__inner {
+  padding-left: 0;
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin: -0.125rem
+}
+.pagination__item {
+  -ms-flex: none;
+  flex: none;
+  margin: 0.125rem
+}
+.pagination__link {
+  color: #99ceff;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 1.625rem;
+  height: 1.625rem;
+  padding: 0 0.4375rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out
+}
+.pagination__link:not(.pagination__link--disabled):not(.pagination__link--active):not(.pagination__link--hellip):hover {
+  color: #fff
+}
+.pagination__link--active {
+  color: #fff;
+  background: #002c54;
+  cursor: default
+}
+.pagination__link--hellip {
+  cursor: default
+}
+.pagination__link--disabled {
+  color: #fff;
+  cursor: default;
+  opacity: 0.3
+}
+.pagination__ico {
+  font-size: 0.4375rem
+}
+.pagination__ico--prev {
+  transform: rotate(90deg)
+}
+.pagination__ico--next {
+  transform: rotate(-90deg)
+}
 .section__header {
   margin-bottom: 2.8125rem
 }
@@ -438,6 +499,22 @@
   vertical-align: top;
   max-width: 100%;
   margin: 0
+}
+.section__back {
+  color: inherit;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0.625rem;
+  transform: translateY(0.0625rem);
+  transition: color 0.15s ease-in-out
+}
+.section__back:hover {
+  color: #99ceff
+}
+.section__back-ico {
+  display: block;
+  width: 0.9375rem;
+  height: 1.75rem
 }
 .select-lang {
   vertical-align: top
@@ -671,6 +748,11 @@ select.select-outline {
   font-size: 1.5rem;
   line-height: 1.75rem
 }
+.table-box {
+  padding: 2.5rem;
+  overflow-x: auto;
+  background: rgba(35, 93, 145, 0.3)
+}
 .table-data {
   font-size: 0.75rem;
   line-height: 1.16667;
@@ -697,10 +779,6 @@ select.select-outline {
 .table-data th:last-child {
   padding-right: 0
 }
-.table-data td:nth-child(2),
-.table-data th:nth-child(2) {
-  max-width: 15.625rem
-}
 .table-data__warning {
   color: #fb5e5b;
   display: inline-block;
@@ -711,6 +789,10 @@ select.select-outline {
   display: block;
   width: 0.75rem;
   height: 0.75rem
+}
+.table-data--stats td:nth-child(2),
+.table-data--stats th:nth-child(2) {
+  max-width: 15.625rem
 }
 .title {
   font-weight: 100;

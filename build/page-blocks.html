@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="page no-js" lang="en">
+  <head>
+    <title>Blocks - TraceChain</title>
+    <!-- Meta-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Favicons-->
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/libs.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <!-- JS Inline-->
+    <!-- |-Insert svg-symbols-->
+    <script>
+      (function()
+      {
+        "use strict";
+        var request = new XMLHttpRequest();
+        request.open("GET", 'img/svg-symbols.svg', true);
+        request.onload = function()
+        {
+          if (request.status >= 200 && request.status < 400)
+          {
+            document.body.insertAdjacentHTML("afterbegin", request.responseText);
+          }
+        };
+        request.send();
+      })();
+    </script>
+    <!-- |-Fix object-fit <img>-->
+    <script>
+      function fitImg(e)
+      {
+        var s = e.style;
+        document.documentElement.style.objectFit === undefined && (s.backgroundImage = 'url(' + e.src + ')', s.paddingLeft = '100%');
+        s.visibility = 'visible';
+      }
+    </script>
+  </head>
+  <body class="page__body">
+    <div class="page__body-inner">
+      <header class="header page__header">
+        <div class="header__inner">
+          <button class="header__btn header__btn--back">
+            <svg class="isvg-angle-left" role="img">
+              <use xlink:href="#isvg-angle-left"></use>
+            </svg>
+          </button>
+          <button class="header__btn header__btn--forward" disabled="">
+            <svg class="isvg-angle-left" role="img">
+              <use xlink:href="#isvg-angle-left"></use>
+            </svg>
+          </button>
+          <button class="header__btn header__btn--reload">
+            <svg class="isvg-refresh" role="img">
+              <use xlink:href="#isvg-refresh"></use>
+            </svg>
+          </button>
+          <div class="header__loc">
+            <input class="header__loc-field" type="text" value="/MetaGate/Create" />
+          </div>
+          <nav class="menu header__menu">
+            <a class="menu__item" href="javascript:">
+              <svg class="isvg-buy menu__item-icon" role="img">
+                <use xlink:href="#isvg-buy"></use>
+              </svg>
+              <span class="menu__item-lbl">Buy#MHC</span>
+            </a>
+            <a class="menu__item" href="javascript:">
+              <svg class="isvg-metawallet menu__item-icon" role="img">
+                <use xlink:href="#isvg-metawallet"></use>
+              </svg>
+              <span class="menu__item-lbl">MetaWallet</span>
+            </a>
+            <a class="menu__item" href="javascript:">
+              <svg class="isvg-metaapps menu__item-icon" role="img">
+                <use xlink:href="#isvg-metaapps"></use>
+              </svg>
+              <span class="menu__item-lbl">MetaApps</span>
+            </a>
+            <a class="menu__item" href="javascript:">
+              <svg class="isvg-settings menu__item-icon" role="img">
+                <use xlink:href="#isvg-settings"></use>
+              </svg>
+              <span class="menu__item-lbl">Settings</span>
+            </a>
+          </nav>
+        </div>
+      </header>
+      <div class="page__main">
+        <section class="section">
+          <header class="section__header">
+            <div class="container-fluid">
+              <div class="row mb-40 align-items-baseline">
+                <div class="col-8">
+                  <div class="row mx-25-inv align-items-baseline">
+                    <div class="col-auto px-25 mw-100">
+                      <h1 class="title section__title">
+                        <strong>Trace</strong>Chain</h1>
+                    </div>
+                    <div class="col-auto px-25 mw-100">
+                      <nav class="breadcrumb section__breadcrumb" aria-label="breadcrumb">
+                        <ol class="breadcrumb__inner">
+                          <li class="breadcrumb__item">
+                            <a class="breadcrumb__item-link" href="javascript:">Home</a>
+                          </li>
+                          <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">Blocks</li>
+                          <li class="breadcrumb__item">
+                            <a class="breadcrumb__item-link" href="javascript:">Transactions</a>
+                          </li>
+                        </ol>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 d-flex flex-column align-items-end">
+                  <nav class="menu-user section__menu-user mw-100">
+                    <ul class="menu-user__inner">
+                      <li class="menu-user__item menu-user__item--login">
+                        <a class="menu-user__link" href="javascript:" title="user-login-example-long@example.com">
+                          <svg class="isvg-user menu-user__icon" role="img">
+                            <use xlink:href="#isvg-user"></use>
+                          </svg>user-login-example-long@example.com</a>
+                      </li>
+                      <li class="menu-user__item">
+                        <a class="menu-user__link" href="javascript:">Logout</a>
+                      </li>
+                      <li class="menu-user__item">
+                        <select class="select-lang">
+                          <option data-content="&lt;img class=&quot;select-lang__opt-icon&quot; src=&quot;img/united-kingdom.svg&quot; alt=&quot;English&quot;&gt;English">English</option>
+                          <option data-content="&lt;img class=&quot;select-lang__opt-icon&quot; src=&quot;img/russia.svg&quot; alt=&quot;Russian&quot;&gt;Russian">Russian</option>
+                        </select>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-7 align-self-center">
+                  <h2 class="section__location">
+                    <a class="section__back" href="javascript:">
+                      <svg class="isvg-arrow-l section__back-ico" role="img">
+                        <use xlink:href="#isvg-arrow-l"></use>
+                      </svg>
+                    </a>Blocks</h2>
+                </div>
+                <div class="col-5">
+                  <form class="form-search section__search" action="">
+                    <input class="form-search__input" type="text" placeholder="Search by Address / Txhash / Block / Token / Ens" autocomplete="off" />
+                    <button class="form-search__btn" tabindex="-1">
+                      <svg class="isvg-search" role="img">
+                        <use xlink:href="#isvg-search"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="container-fluid">
+            <div class="table-box mb-25">
+              <table class="table-data table-data--stats">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Hash</th>
+                    <th>Age</th>
+                    <th>Count</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>707</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>16&nbsp;hours&nbsp;ago</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>706</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>18&nbsp;hours&nbsp;ago</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>705</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>16&nbsp;hours&nbsp;ago</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>704</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>18&nbsp;hours&nbsp;ago</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>703</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>16&nbsp;hours&nbsp;ago</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>702</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>18&nbsp;hours&nbsp;ago</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>701</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>1&nbsp;day&nbsp;ago</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>700</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>3&nbsp;days&nbsp;ago</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>699</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>20.03.2018</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>698</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>20.03.2018</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>707</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>16&nbsp;hours&nbsp;ago</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>706</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>18&nbsp;hours&nbsp;ago</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>705</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>16&nbsp;hours&nbsp;ago</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>704</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>18&nbsp;hours&nbsp;ago</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>703</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>16&nbsp;hours&nbsp;ago</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>702</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>18&nbsp;hours&nbsp;ago</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>701</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>1&nbsp;day&nbsp;ago</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>700</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>3&nbsp;days&nbsp;ago</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>699</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>20.03.2018</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>698</td>
+                    <td>
+                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                    </td>
+                    <td>20.03.2018</td>
+                    <td>5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <nav class="pagination">
+              <ul class="pagination__inner">
+                <li class="pagination__item">
+                  <span class="pagination__link pagination__link--disabled">
+                    <svg class="isvg-angle-d pagination__ico pagination__ico--prev" role="img">
+                      <use xlink:href="#isvg-angle-d"></use>
+                    </svg>
+                  </span>
+                </li>
+                <li class="pagination__item">
+                  <span class="pagination__link pagination__link--active">1</span>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="javascript:">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="javascript:">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="javascript:">4</a>
+                </li>
+                <li class="pagination__item">
+                  <span class="pagination__link pagination__link--hellip">&hellip;</span>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="javascript:">1425</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="javascript:">
+                    <svg class="isvg-angle-d pagination__ico pagination__ico--next" role="img">
+                      <use xlink:href="#isvg-angle-d"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
+      <footer class="footer page__footer">
+        <div class="container-fluid">
+          <div class="footer__inner">
+            <div class="row">
+              <div class="col-6">
+                <a class="logo footer__logo" href="index.html">
+                  <svg class="isvg-logo logo__img" role="img">
+                    <use xlink:href="#isvg-logo"></use>
+                  </svg>
+                </a>
+                <p class="footer__copyright">Copyright ©&nbsp;2018 #MetaHash. All Rights Reserved</p>
+              </div>
+              <div class="col-6 text-right">
+                <a class="action-support footer__support" href="javascript:">
+                  <svg class="isvg-dialog action-support__icon" role="img">
+                    <use xlink:href="#isvg-dialog"></use>
+                  </svg>
+                  <span class="action-support__text">
+                    <small>Have questions?</small>Ask our support</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JS-->
+    <script src="js/libs.js"></script>
+    <script src="js/app.js" async=""></script>
+  </body>
+</html>

@@ -19,9 +19,6 @@
     &:last-child {
       padding-right: 0;
     }
-    &:nth-child(2) {
-      max-width: 250px;
-    }
   }
 
   &__warning {
@@ -34,6 +31,14 @@
       display: block;
       width: 12px;
       height: 12px;
+    }
+  }
+
+  &--stats {
+    th, td {
+      &:nth-child(2) {
+        max-width: 250px;
+      }
     }
   }
 }

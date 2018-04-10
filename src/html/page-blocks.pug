@@ -1,0 +1,118 @@
+include helpers/variables
+include helpers/mixins
+
+include ../blocks/page/page
+include ../blocks/header/header
+include ../blocks/footer/footer
+include ../blocks/breadcrumb/breadcrumb
+include ../blocks/menu-user/menu-user
+
+- $.title = `${pageList.blocks.title} - ${$.package.description}`;
+
++page
+  +header.__header
+  +e.__main
+    +b.SECTION.section
+      +e.HEADER.__header
+        .container-fluid
+          .row.mb-40.align-items-baseline
+            .col-8
+              .row.mx-25-inv.align-items-baseline
+                .col-auto.px-25.mw-100
+                  +b.H1.title.__title #[strong Trace]Chain
+                .col-auto.px-25.mw-100
+                  +breadcrumb(['Home', 'Blocks', 'Transactions'], 1).__breadcrumb
+            .col-4.d-flex.flex-column.align-items-end
+              +menu-user.__menu-user.mw-100
+          .row
+            .col-7.align-self-center
+              +e.H2.__location
+                +e.A.__back(href=js): +isvg#arrow-l.__back-ico
+                | Blocks
+            .col-5
+              +b.FORM.form-search.__search(action='')
+                +e.INPUT.__input(type='text' placeholder='Search by Address / Txhash / Block / Token / Ens' autocomplete='off')
+                +e.BUTTON.__btn(tabindex='-1')
+                  +isvg#search
+      .container-fluid
+        +b.table-box.mb-25
+          +b.TABLE.table-data--stats
+            thead
+              tr
+                th ID
+                th Hash
+                th Age
+                th Count
+            tbody
+              each group in [0, 1]
+                tr
+                  td 707
+                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                  td 16&nbsp;hours&nbsp;ago
+                  td 1
+                tr
+                  td 706
+                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                  td 18&nbsp;hours&nbsp;ago
+                  td 5
+                tr
+                  td 705
+                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                  td 16&nbsp;hours&nbsp;ago
+                  td 1
+                tr
+                  td 704
+                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                  td 18&nbsp;hours&nbsp;ago
+                  td 5
+                tr
+                  td 703
+                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                  td 16&nbsp;hours&nbsp;ago
+                  td 1
+                tr
+                  td 702
+                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                  td 18&nbsp;hours&nbsp;ago
+                  td 5
+                tr
+                  td 701
+                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                  td 1&nbsp;day&nbsp;ago
+                  td 1
+                tr
+                  td 700
+                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                  td 3&nbsp;days&nbsp;ago
+                  td 5
+                tr
+                  td 699
+                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                  td 20.03.2018
+                  td 1
+                tr
+                  td 698
+                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                  td 20.03.2018
+                  td 5
+        +b.NAV.pagination
+          +e.UL.__inner
+            +e.LI.__item
+              +e.SPAN.__link--disabled
+                +isvg#angle-d.__ico--prev
+            +e.LI.__item
+              +e.SPAN.__link--active 1
+            +e.LI.__item
+              +e.A.__link(href=js) 2
+            +e.LI.__item
+              +e.A.__link(href=js) 3
+            +e.LI.__item
+              +e.A.__link(href=js) 4
+            +e.LI.__item
+              +e.SPAN.__link--hellip &hellip;
+            +e.LI.__item
+              +e.A.__link(href=js) 1425
+            +e.LI.__item
+              +e.A.__link(href=js)
+                +isvg#angle-d.__ico--next
+  +footer.__footer
