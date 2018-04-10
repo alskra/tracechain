@@ -428,6 +428,7 @@
   margin-bottom: 2.8125rem
 }
 .section__location {
+  font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.75rem;
   white-space: nowrap;
@@ -435,7 +436,8 @@
   text-overflow: ellipsis;
   display: inline-block;
   vertical-align: top;
-  max-width: 100%
+  max-width: 100%;
+  margin: 0
 }
 .select-lang {
   vertical-align: top
@@ -505,6 +507,199 @@
 select.select-lang {
   position: absolute;
   clip: rect(0, 0, 0, 0)
+}
+.select-light {
+  vertical-align: top
+}
+.select-light__toggle {
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+  color: inherit;
+  text-align: left;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  background: none;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  position: relative
+}
+.select-light__toggle:hover {
+  border-color: #fff
+}
+.select-light__toggle .filter-option {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-width: 0.0125rem
+}
+.select-light__toggle .filter-option-inner {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.select-light__toggle .isvg-angle-d {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: 0.4375rem;
+  margin: 0.4375rem 0 0 0.625rem
+}
+.select-light__menu .dropdown-item {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #636363;
+  text-decoration: none;
+  padding: 0.3125rem 0.9375rem
+}
+.select-light__menu .dropdown-item:active,
+.select-light__menu .dropdown-item:focus,
+.select-light__menu .dropdown-item:hover {
+  color: #636363;
+  background: #ddd
+}
+.select-light__menu .dropdown-item.active {
+  color: #fff;
+  background: #2f7bc2
+}
+.select-light__menu .text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block!important
+}
+select.select-light {
+  position: absolute;
+  clip: rect(0, 0, 0, 0)
+}
+.select-outline {
+  vertical-align: top
+}
+.select-outline__toggle {
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: inherit;
+  text-align: left;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0.4375rem 0.625rem;
+  border: 0.0625rem solid rgba(153, 206, 255, 0.3);
+  border-radius: 0.25rem;
+  background: none;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  position: relative
+}
+.select-outline__toggle:hover {
+  border-color: #fff
+}
+.select-outline__toggle .filter-option {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-width: 0.0125rem
+}
+.select-outline__toggle .filter-option-inner {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.select-outline__toggle .isvg-angle-d {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: 0.4375rem;
+  margin: auto 0 auto 0.625rem
+}
+.select-outline__menu .dropdown-item {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #636363;
+  text-decoration: none;
+  padding: 0.3125rem 0.9375rem
+}
+.select-outline__menu .dropdown-item:active,
+.select-outline__menu .dropdown-item:focus,
+.select-outline__menu .dropdown-item:hover {
+  color: #636363;
+  background: #ddd
+}
+.select-outline__menu .dropdown-item.active {
+  color: #fff;
+  background: #2f7bc2
+}
+.select-outline__menu .text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block!important
+}
+select.select-outline {
+  position: absolute;
+  clip: rect(0, 0, 0, 0)
+}
+.stats {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.stats__header {
+  padding: 1.25rem 2.5rem;
+  background: rgba(47, 123, 194, 0.7)
+}
+.stats__title {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: #99ceff;
+  text-transform: uppercase;
+  margin: 0
+}
+.stats__count {
+  font-size: 3.5rem;
+  line-height: 4.125rem
+}
+.stats__body {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 1.5625rem 2.5rem 1.875rem;
+  background: rgba(35, 93, 145, 0.3)
+}
+.stats__body-title {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.75rem
+}
+.table-data {
+  font-size: 0.75rem;
+  line-height: 1.16667;
+  word-wrap: break-word;
+  width: 100%
+}
+.table-data th {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.1875rem 0.625rem
+}
+.table-data td {
+  padding: 0.75rem 0.625rem
+}
+.table-data td,
+.table-data th {
+  vertical-align: baseline
+}
+.table-data td:first-child,
+.table-data th:first-child {
+  padding-left: 0
+}
+.table-data td:last-child,
+.table-data th:last-child {
+  padding-right: 0
+}
+.table-data td:nth-child(2),
+.table-data th:nth-child(2) {
+  max-width: 15.625rem
 }
 .title {
   font-weight: 100;

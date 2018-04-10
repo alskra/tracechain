@@ -1,0 +1,66 @@
+.select-outline {
+  vertical-align: top;
+
+  &__toggle {
+    font-size: 12px;
+    line-height: 14px;
+    color: inherit;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    padding: (30px - 14px - 2px)/2 10px;
+    border: 1px solid rgba(153, 206, 255, 0.3);
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+    transition: $btn-transition;
+    position: relative;
+    &:hover {
+      border-color: white;
+    }
+    .filter-option {
+      flex-grow: 1;
+      min-width: 0.2px;
+
+      &-inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .isvg-angle-d {
+      flex-shrink: 0;
+      font-size: 7px;
+      margin: auto 0 auto 10px;
+    }
+  }
+
+  &__menu {
+    .dropdown-item {
+      font-size: 14px;
+      line-height: 18px;
+      color: $color-dark;
+      text-decoration: none;
+      padding: 5px 15px;
+      @include hover-focus-active {
+        color: $color-dark;
+        background: #ddd;
+      }
+      &.active {
+        color: white;
+        background: $color-primary;
+      }
+    }
+    .text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block !important;
+    }
+  }
+}
+
+select.select-outline {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}

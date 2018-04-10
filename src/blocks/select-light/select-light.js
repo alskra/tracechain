@@ -1,5 +1,5 @@
-const SelectLang = function () {
-  const b = 'select-lang';
+const SelectLight = function () {
+  const b = 'select-light';
   let s;
   return {
     settings: {

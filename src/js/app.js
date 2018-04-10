@@ -5,4 +5,6 @@
 
 $(function () {
   SelectLang.init();
+  SelectOutline.init();
+  SelectLight.init();
 });

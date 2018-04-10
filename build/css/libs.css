@@ -1294,7 +1294,7 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #fff;
+  color: #212529;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -1697,7 +1697,7 @@ tbody.collapse.show {
 }
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #fff
+  color: #212529
 }
 .align-baseline {
   vertical-align: baseline!important
@@ -12083,8 +12083,8 @@ select.selectpicker {
   width: 1.0661em;
   height: 1em
 }
-.color-white {
-  color: #fff
+.color-link {
+  color: #99ceff
 }
 .overflow-hidden {
   overflow: hidden

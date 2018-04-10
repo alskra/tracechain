@@ -24,9 +24,9 @@ include ../blocks/menu-user/menu-user
                   +breadcrumb(['Home', 'Blocks', 'Transactions'], 0).__breadcrumb
             .col-4.d-flex.flex-column.align-items-end
               +menu-user.__menu-user.mw-100
-          .row.align-items-start
+          .row
             .col-7.align-self-center
-              +e.__location Current Stats
+              +e.H2.__location Current Stats
             .col-5
               +b.FORM.form-search.__search(action='')
                 +e.INPUT.__input(type='text' placeholder='Search by Address / Txhash / Block / Token / Ens' autocomplete='off')
@@ -35,19 +35,215 @@ include ../blocks/menu-user/menu-user
       .container-fluid
         .row
           .col-6
-            +b.TABLE.table-data
-              thead
-                tr
-                  th ID
-                  th Hash
-                  th Age
-                  th Count
-              tbody
-                tr
-                  td 707
-                  td 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td 16 hours ago
-                  td 1
-            +b.A.btn--primary.w-100(href=js)
-              +e.__lbl Show more
+            +b.SECTION.stats.h-100
+              +e.HEADER.__header
+                .row.flex-nowrap.mb-10
+                  .col.align-self-center
+                    +e.H3.__title Block count
+                  .col-auto
+                    +b.SELECT.select-outline
+                      option All time
+                      option Last month
+                      option Last week
+                +e.__count 10,759,735
+              +e.__body
+                .row.flex-nowrap.mb-30
+                  .col
+                    +e.__body-title Blocks
+                  .col-auto.align-self-center
+                    +b.SELECT.select-light
+                      option Last 10 blocks
+                      option Last 20 blocks
+                      option Last 30 blocks
+                +b.TABLE.table-data.mb-20
+                  thead
+                    tr
+                      th ID
+                      th Hash
+                      th Age
+                      th Count
+                  tbody
+                    tr
+                      td 707
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 706
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 705
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 704
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 703
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 702
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 701
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 700
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 699
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 698
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 707
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 706
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 705
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 704
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 703
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 702
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 701
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 700
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 699
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 698
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                +b.A.btn--primary.w-100(href=js)
+                  +e.__lbl Show more
+          .col-6
+            +b.SECTION.stats.h-100
+              +e.HEADER.__header
+                .row.flex-nowrap.mb-10
+                  .col.align-self-center
+                    +e.H3.__title Transaction count
+                  .col-auto
+                    +b.SELECT.select-outline
+                      option All time
+                      option Last month
+                      option Last week
+                +e.__count 10,759,735
+              +e.__body
+                .row.flex-nowrap.mb-30
+                  .col
+                    +e.__body-title Transactions
+                  .col-auto.align-self-center
+                    +b.SELECT.select-light
+                      option Last 10 transactions
+                      option Last 20 transactions
+                      option Last 30 transactions
+                +b.TABLE.table-data.mb-20
+                  thead
+                    tr
+                      th ID
+                      th Hash
+                      th Age
+                      th Count
+                  tbody
+                    tr
+                      td 707
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 706
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 705
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 704
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 703
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 702
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 701
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 700
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                    tr
+                      td 699
+                      td: div.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      td 16&nbsp;hours&nbsp;ago
+                      td 1
+                    tr
+                      td 698
+                      td: div.color-link 6b755668eeb75...ecb8cb16af
+                      td 18&nbsp;hours&nbsp;ago
+                      td 5
+                +b.A.btn--primary.w-100(href=js)
+                  +e.__lbl Show more
   +footer.__footer

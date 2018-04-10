@@ -1,5 +1,5 @@
-const SelectLang = function () {
-  const b = 'select-lang';
+const SelectOutline = function () {
+  const b = 'select-outline';
   let s;
   return {
     settings: {

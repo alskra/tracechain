@@ -1,3 +1,26 @@
 .table-data {
-
+  font-size: 12px;
+  line-height: (14/12);
+  word-wrap: break-word;
+  width: 100%;
+  th {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 3px 10px;
+  }
+  td {
+    padding: 12px 10px;
+  }
+  th, td {
+    vertical-align: baseline;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    &:nth-child(2) {
+      max-width: 250px;
+    }
+  }
 }

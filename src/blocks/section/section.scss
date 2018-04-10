@@ -12,6 +12,7 @@
   }
 
   &__location {
+    font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     white-space: nowrap;
@@ -20,5 +21,6 @@
     display: inline-block;
     vertical-align: top;
     max-width: 100%;
+    margin: 0;
   }
 }
