@@ -785,7 +785,7 @@ select.select-outline {
 }
 .table-data--stats td:nth-child(2),
 .table-data--stats th:nth-child(2) {
-  max-width: 15.625rem
+  max-width: 12.5rem
 }
 .table-data--blocks td:nth-child(2),
 .table-data--blocks th:nth-child(2) {
@@ -795,7 +795,7 @@ select.select-outline {
 .table-data--transactions td:nth-child(4),
 .table-data--transactions th:nth-child(1),
 .table-data--transactions th:nth-child(4) {
-  max-width: 18.75rem
+  max-width: 17.5rem
 }
 .table-data--transactions td:nth-child(3),
 .table-data--transactions th:nth-child(3) {
