@@ -790,6 +790,16 @@ select.select-outline {
 .table-data--stats th:nth-child(2) {
   max-width: 15.625rem
 }
+.table-data--transactions td:nth-child(1),
+.table-data--transactions td:nth-child(4),
+.table-data--transactions th:nth-child(1),
+.table-data--transactions th:nth-child(4) {
+  max-width: 15.625rem
+}
+.table-data--transactions td:nth-child(3),
+.table-data--transactions th:nth-child(3) {
+  max-width: 9.375rem
+}
 .title {
   font-weight: 100;
   font-size: 3.75rem;
