@@ -21,6 +21,14 @@
       }
     }
   }
+  a {
+    color: $color-link;
+    text-decoration: none;
+    transition: color $btn-transition-base;
+    &:hover {
+      color: white;
+    }
+  }
 
   &__warning {
     color: $color-warning;

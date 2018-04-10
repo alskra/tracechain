@@ -19,6 +19,7 @@
     url-img('team-cloud.jpg') no-repeat 100% 100% fixed,
     url-img('prefooter-explode.jpg') no-repeat 100% -30px fixed $color-body-bg;
     background-blend-mode: normal, lighten, normal, lighten;
+    transform: translateZ(0);
 
     &-inner {
       display: flex;

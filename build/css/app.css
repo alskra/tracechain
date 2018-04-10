@@ -397,7 +397,8 @@
   color: #fff;
   height: 100%;
   background: url(../img/promo-spiral.png) no-repeat 0 -1.875rem fixed,url(../img/promo-planet.jpg) no-repeat 0 -1.875rem fixed,url(../img/whatis-satelit.png) no-repeat right 11.5625rem top 18.125rem fixed,url(../img/team-cloud.jpg) no-repeat 100% 100% fixed,url(../img/prefooter-explode.jpg) no-repeat 100% -1.875rem fixed #03081c;
-  background-blend-mode: normal,lighten,normal,lighten
+  background-blend-mode: normal,lighten,normal,lighten;
+  transform: translateZ(0)
 }
 .page__body-inner {
   display: -ms-flexbox;
@@ -772,6 +773,14 @@ select.select-outline {
 }
 .table-data tbody tr:hover {
   background: #194368
+}
+.table-data a {
+  color: #99ceff;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out
+}
+.table-data a:hover {
+  color: #fff
 }
 .table-data__warning {
   color: #fb5e5b;
