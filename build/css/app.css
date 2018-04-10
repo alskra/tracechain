@@ -701,6 +701,17 @@ select.select-outline {
 .table-data th:nth-child(2) {
   max-width: 15.625rem
 }
+.table-data__warning {
+  color: #fb5e5b;
+  display: inline-block;
+  padding: 0 0.25rem;
+  vertical-align: -0.125rem
+}
+.table-data__warning-ico {
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem
+}
 .title {
   font-weight: 100;
   font-size: 3.75rem;

@@ -12055,6 +12055,10 @@ select.selectpicker {
   width: 1.03005em;
   height: 1em
 }
+.isvg-info {
+  width: 0.91733em;
+  height: 1em
+}
 .isvg-logo {
   width: 6.75em;
   height: 1em
@@ -12085,6 +12089,9 @@ select.selectpicker {
 }
 .color-link {
   color: #99ceff
+}
+.color-warning {
+  color: #fb5e5b
 }
 .overflow-hidden {
   overflow: hidden
