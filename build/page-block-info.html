@@ -44,17 +44,17 @@
     <div class="page__body-inner">
       <header class="header page__header">
         <div class="header__inner">
-          <button class="header__btn header__btn--back">
+          <button class="header__btn header__btn--back" onclick="history.back()">
             <svg class="isvg-angle-left" role="img">
               <use xlink:href="#isvg-angle-left"></use>
             </svg>
           </button>
-          <button class="header__btn header__btn--forward" disabled="">
+          <button class="header__btn header__btn--forward" disabled="" onclick="history.forward()">
             <svg class="isvg-angle-left" role="img">
               <use xlink:href="#isvg-angle-left"></use>
             </svg>
           </button>
-          <button class="header__btn header__btn--reload">
+          <button class="header__btn header__btn--reload" onclick="history.go(0)">
             <svg class="isvg-refresh" role="img">
               <use xlink:href="#isvg-refresh"></use>
             </svg>

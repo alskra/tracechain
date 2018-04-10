@@ -113,6 +113,10 @@
 .container-fluid {
   max-width: 80rem
 }
+.content-box {
+  padding: 2.5rem;
+  background: rgba(35, 93, 145, 0.3)
+}
 .content .h1,
 .content .h2,
 .content .h3,
@@ -748,17 +752,11 @@ select.select-outline {
   font-size: 1.5rem;
   line-height: 1.75rem
 }
-.table-box {
-  padding: 2.5rem;
-  overflow-x: auto;
-  background: rgba(35, 93, 145, 0.3)
-}
 .table-data {
   font-size: 0.75rem;
   line-height: 1.16667;
   word-wrap: break-word;
-  width: calc(100% + 1.25rem);
-  margin: 0 -0.625rem
+  width: 100%
 }
 .table-data th {
   font-weight: 700;
@@ -778,7 +776,6 @@ select.select-outline {
 .table-data__warning {
   color: #fb5e5b;
   display: inline-block;
-  padding: 0 0.25rem;
   vertical-align: -0.125rem
 }
 .table-data__warning-ico {
@@ -788,13 +785,17 @@ select.select-outline {
 }
 .table-data--stats td:nth-child(2),
 .table-data--stats th:nth-child(2) {
-  max-width: 12.5rem
+  max-width: 15.625rem
+}
+.table-data--blocks td:nth-child(2),
+.table-data--blocks th:nth-child(2) {
+  max-width: 37.5rem
 }
 .table-data--transactions td:nth-child(1),
 .table-data--transactions td:nth-child(4),
 .table-data--transactions th:nth-child(1),
 .table-data--transactions th:nth-child(4) {
-  max-width: 15.625rem
+  max-width: 18.75rem
 }
 .table-data--transactions td:nth-child(3),
 .table-data--transactions th:nth-child(3) {

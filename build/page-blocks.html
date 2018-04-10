@@ -44,17 +44,17 @@
     <div class="page__body-inner">
       <header class="header page__header">
         <div class="header__inner">
-          <button class="header__btn header__btn--back">
+          <button class="header__btn header__btn--back" onclick="history.back()">
             <svg class="isvg-angle-left" role="img">
               <use xlink:href="#isvg-angle-left"></use>
             </svg>
           </button>
-          <button class="header__btn header__btn--forward" disabled="">
+          <button class="header__btn header__btn--forward" disabled="" onclick="history.forward()">
             <svg class="isvg-angle-left" role="img">
               <use xlink:href="#isvg-angle-left"></use>
             </svg>
           </button>
-          <button class="header__btn header__btn--reload">
+          <button class="header__btn header__btn--reload" onclick="history.go(0)">
             <svg class="isvg-refresh" role="img">
               <use xlink:href="#isvg-refresh"></use>
             </svg>
@@ -161,179 +161,181 @@
             </div>
           </header>
           <div class="container-fluid">
-            <div class="table-box mb-25">
-              <table class="table-data table-data--stats">
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Hash</th>
-                    <th>Age</th>
-                    <th>Count</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>707</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>16&nbsp;hours&nbsp;ago</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>706</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>18&nbsp;hours&nbsp;ago</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>705</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>16&nbsp;hours&nbsp;ago</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>704</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>18&nbsp;hours&nbsp;ago</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>703</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>16&nbsp;hours&nbsp;ago</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>702</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>18&nbsp;hours&nbsp;ago</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>701</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>1&nbsp;day&nbsp;ago</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>700</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>3&nbsp;days&nbsp;ago</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>699</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>20.03.2018</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>698</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>20.03.2018</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>707</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>16&nbsp;hours&nbsp;ago</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>706</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>18&nbsp;hours&nbsp;ago</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>705</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>16&nbsp;hours&nbsp;ago</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>704</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>18&nbsp;hours&nbsp;ago</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>703</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>16&nbsp;hours&nbsp;ago</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>702</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>18&nbsp;hours&nbsp;ago</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>701</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>1&nbsp;day&nbsp;ago</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>700</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>3&nbsp;days&nbsp;ago</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>699</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>20.03.2018</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>698</td>
-                    <td>
-                      <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                    </td>
-                    <td>20.03.2018</td>
-                    <td>5</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="content-box mb-25">
+              <div class="overflow-x-auto mx-10-inv">
+                <table class="table-data table-data--blocks">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Hash</th>
+                      <th>Age</th>
+                      <th>Count</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>707</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>16&nbsp;hours&nbsp;ago</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>706</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>18&nbsp;hours&nbsp;ago</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>705</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>16&nbsp;hours&nbsp;ago</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>704</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>18&nbsp;hours&nbsp;ago</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>703</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>16&nbsp;hours&nbsp;ago</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>702</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>18&nbsp;hours&nbsp;ago</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>701</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>1&nbsp;day&nbsp;ago</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>700</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>3&nbsp;days&nbsp;ago</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>699</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>20.03.2018</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>698</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>20.03.2018</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>707</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>16&nbsp;hours&nbsp;ago</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>706</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>18&nbsp;hours&nbsp;ago</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>705</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>16&nbsp;hours&nbsp;ago</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>704</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>18&nbsp;hours&nbsp;ago</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>703</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>16&nbsp;hours&nbsp;ago</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>702</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>18&nbsp;hours&nbsp;ago</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>701</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>1&nbsp;day&nbsp;ago</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>700</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>3&nbsp;days&nbsp;ago</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>699</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>20.03.2018</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>698</td>
+                      <td>
+                        <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                      </td>
+                      <td>20.03.2018</td>
+                      <td>5</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
             <nav class="pagination">
               <ul class="pagination__inner">

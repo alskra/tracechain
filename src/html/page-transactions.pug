@@ -35,51 +35,67 @@ include ../blocks/menu-user/menu-user
                 +e.BUTTON.__btn(tabindex='-1')
                   +isvg#search
       .container-fluid
-        +b.table-box.mb-25
-          +b.TABLE.table-data--transactions
-            thead
-              tr
-                th Hash
-                th Age
-                th From
-                th To
-                th Value
-            tbody
-              each group in [0, 1]
+        +b.content-box.mb-25
+          .overflow-x-auto.mx-10-inv
+            +b.TABLE.table-data--transactions
+              thead
                 tr
-                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                    +e.__warning
-                      +isvg#info.__warning-ico
-                  td 16&nbsp;hours&nbsp;ago
-                  td.text-truncate: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td 20
-                tr
-                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td 1&nbsp;day&nbsp;ago
-                  td.text-truncate: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td 20
-                tr
-                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                    +e.__warning
-                      +isvg#info.__warning-ico
-                  td 20.03.2018
-                  td.text-truncate: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td 0
-                tr
-                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td 16&nbsp;hours&nbsp;ago
-                  td.text-truncate: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td 20
-                tr
-                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td 1&nbsp;day&nbsp;ago
-                  td.text-truncate: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td: span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
-                  td 20
+                  th Hash
+                  th Age
+                  th From
+                  th To
+                  th Value
+              tbody
+                each group in [0, 1, 2, 3]
+                  tr
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      +e.__warning
+                        +isvg#info.__warning-ico
+                    td 16&nbsp;hours&nbsp;ago
+                    td.text-truncate
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 20
+                  tr
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 1&nbsp;day&nbsp;ago
+                    td.text-truncate
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 20
+                  tr
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      +e.__warning
+                        +isvg#info.__warning-ico
+                    td 20.03.2018
+                    td.text-truncate
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 0
+                  tr
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 16&nbsp;hours&nbsp;ago
+                    td.text-truncate
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 20
+                  tr
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 1&nbsp;day&nbsp;ago
+                    td.text-truncate
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 20
         +b.NAV.pagination
           +e.UL.__inner
             +e.LI.__item
