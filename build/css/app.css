@@ -159,11 +159,11 @@
   font-size: 1.25rem
 }
 .content a {
-  color: inherit;
-  text-decoration: underline
+  color: #99ceff;
+  text-decoration: none
 }
 .content a:hover {
-  text-decoration: none
+  text-decoration: underline
 }
 .footer {
   font-size: 0.75rem;
@@ -397,8 +397,7 @@
   color: #fff;
   height: 100%;
   background: url(../img/promo-spiral.png) no-repeat 0 -1.875rem fixed,url(../img/promo-planet.jpg) no-repeat 0 -1.875rem fixed,url(../img/whatis-satelit.png) no-repeat right 11.5625rem top 18.125rem fixed,url(../img/team-cloud.jpg) no-repeat 100% 100% fixed,url(../img/prefooter-explode.jpg) no-repeat 100% -1.875rem fixed #03081c;
-  background-blend-mode: normal,lighten,normal,lighten;
-  transform: translateZ(0)
+  background-blend-mode: normal,lighten,normal,lighten
 }
 .page__body-inner {
   display: -ms-flexbox;
@@ -420,7 +419,8 @@
 .page__main {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-  padding: 4.375rem 0 2.5rem
+  padding: 4.375rem 0 2.5rem;
+  will-change: transform
 }
 .page__footer {
   -ms-flex: none;
