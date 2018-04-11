@@ -72,11 +72,15 @@
       color: $color-success-1;
     }
 
+    &--error {
+      color: $color-danger;
+    }
+
     &-ico {
       display: block;
       width: 100%;
       height: 21px;
-      margin-bottom: 15px;
+      margin-bottom: 13px;
     }
   }
 }

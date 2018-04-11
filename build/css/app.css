@@ -364,11 +364,14 @@
 .info-box__badge--success {
   color: #39c948
 }
+.info-box__badge--error {
+  color: #fb5e5b
+}
 .info-box__badge-ico {
   display: block;
   width: 100%;
   height: 1.3125rem;
-  margin-bottom: 0.9375rem
+  margin-bottom: 0.8125rem
 }
 .list-log {
   font-size: 1rem;
