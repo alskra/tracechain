@@ -73,5 +73,48 @@ include ../blocks/menu-user/menu-user
                 +isvg#info.__badge-ico
                 | Error
           +e.__body
+            .row
+              .col-6
+                +e.DL.__dl
+                  dt From
+                  dd
+                    span.color-link 0x0029127894e035914a031b79c55a874567f23a7263cec6ce67
+                  dt To
+                  dd
+                    span.color-link 0x00bfa654af2e24ba1faea7498a77c732e26fd105b9c7739d44
+              .col-6
+                .row.mb-20
+                  +e.TABLE.__table
+                    thead
+                      tr
+                        th Fee
+                        th Value
+                        th Block num
+                        th Transaction index (in block)
+                        th Nonce
+                    tbody
+                      tr
+                        td 0
+                        td 0
+                        td
+                          span.color-link 708
+                        td 1
+                        td 55
+                +e.DL.__dl
+                  dt Block hash
+                  dd
+                    span.color-link 2a488eaa519cbca8b1930afa0c65f3a9d31ea2b70555170776b04044128b3ac5
+                    +b.msg--warning
+                      +isvg#info.__ico
+                      +e.__txt Warning! Error encountered during contract execution [Out of gas]
           +e.__body
+            +e.DL.__dl
+              dt Data
+              dd NGUzOWJiMzc2ZWExOWVmMDgzMmE3OTk1ODVmMjg3YzUxYTU4NzQ3MGI2MzcwODBkMTY1ZWRiYjA5NjYxOTk1Zg
+              dt Decoded data
+              dd 4e39bb376ea19ef0832a799585f287c51a587470b637080d165edbb09661995f
+              dt Signature
+              dd 0x304402206eed235e6300504131e0fbea5655d8191779880ebcd5ce73f2e8dbe2031f232b02201baa6e561db2d5212dda05b5908f5bf5e636d62cf20c364bb926ae300c9d59b4
+              dt Public key
+              dd 0x3059301306072a8648ce3d020106082a8648ce3d030107034200047a8ffbb5b9ee5779bffa6bbc40c8d0e9e17139703f7e3ce812d0b2d6d500d9cb2754534700e60824ef1cc0bf1650f27c5d50c6a9ccab5f4341c882775c6247d3
   +footer.__footer

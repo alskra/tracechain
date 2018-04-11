@@ -1,0 +1,17 @@
+.msg {
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: flex-start;
+
+  &__ico {
+    flex: none;
+    width: 11px;
+    height: 11px;
+    margin: 2px 7px 0 0;
+  }
+
+  &--warning {
+    color: $color-danger;
+  }
+}
