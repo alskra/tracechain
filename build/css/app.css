@@ -132,6 +132,7 @@
   background: rgba(5, 11, 31, 0.6)
 }
 .code-box pre {
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
   margin: 0
 }
 .container-fluid {

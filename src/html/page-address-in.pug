@@ -121,8 +121,10 @@ include ../blocks/menu-user/menu-user
                             td
                               span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
                             td 30
-                +e.__content-item.fade#internal-transactions Internal Transactions
-                +e.__content-item.fade#token-transfer Token Transfer
+                +e.__content-item.fade#internal-transactions
+                  +b.content-box Internal Transactions
+                +e.__content-item.fade#token-transfer
+                  +b.content-box Token Transfer
                 +e.__content-item.fade#contract-code
                   +b.code-box
                     pre
@@ -150,8 +152,10 @@ include ../blocks/menu-user/menu-user
                                 }
                             }
                         }
-                +e.__content-item.fade#contract-state Contract State
-                +e.__content-item.fade#comments Сomments
+                +e.__content-item.fade#contract-state
+                  +b.content-box Contract State
+                +e.__content-item.fade#comments
+                  +b.content-box Сomments
             +b.NAV.pagination
               +e.UL.__inner
                 +e.LI.__item
