@@ -10,10 +10,6 @@
   -ms-flex-align: start;
   align-items: flex-start
 }
-.action-support:hover .action-support__icon {
-  transition: transform 10s ease-in-out 0.1s;
-  transform: rotateY(360deg)
-}
 .action-support__icon {
   -ms-flex: none;
   flex: none;
@@ -67,6 +63,8 @@
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: top;
@@ -113,6 +111,18 @@
 }
 .btn--primary:not(:disabled):active {
   background: #256199
+}
+.btn--simple {
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+  color: #fff;
+  text-transform: uppercase
+}
+.btn--simple .btn__ico {
+  width: 1.1875rem;
+  height: 1.1875rem;
+  transform: scale(0.78947);
+  margin-right: 0.25rem
 }
 .container-fluid {
   max-width: 80rem
@@ -289,6 +299,60 @@
 .header__menu {
   margin-left: auto;
   margin-right: 1.25rem
+}
+.info-box__head {
+  display: -ms-flexbox;
+  display: flex
+}
+.info-box__head-col {
+  padding: 1.25rem 2.5rem 1.5625rem
+}
+.info-box__head-col--1 {
+  background: rgba(47, 123, 194, 0.7)
+}
+.info-box__head-col--2 {
+  background: rgba(47, 123, 194, 0.5)
+}
+.info-box__head-col--3 {
+  background: rgba(47, 123, 194, 0.3)
+}
+.info-box__head-col-row {
+  min-height: 1.875rem;
+  margin-bottom: 1.25rem
+}
+.info-box__title {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: #99ceff;
+  text-transform: uppercase
+}
+.info-box__hash {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center
+}
+.info-box__hash-ico {
+  font-size: 2rem;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 1.0625rem
+}
+.info-box__hash-txt {
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  word-wrap: break-word;
+  min-width: 0.0125rem
+}
+.info-box__num {
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-top: -0.3125rem
+}
+.info-box__body {
+  padding: 2.5rem;
+  background: rgba(35, 93, 145, 0.3)
 }
 .logo {
   color: inherit;
@@ -733,7 +797,7 @@ select.select-outline {
   flex-direction: column
 }
 .stats__header {
-  padding: 1.25rem 1.875rem;
+  padding: 1.25rem 2.5rem;
   background: rgba(47, 123, 194, 0.7)
 }
 .stats__title {
@@ -751,7 +815,7 @@ select.select-outline {
 .stats__body {
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding: 1.875rem;
+  padding: 1.875rem 2.5rem;
   background: rgba(35, 93, 145, 0.3)
 }
 .stats__body-title {

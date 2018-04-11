@@ -10,8 +10,8 @@
   align-items: flex-start;
   &:hover {
     #{$b}__icon {
-      transition: transform 10s ease-in-out 0.1s;
-      transform: rotateY(360deg);
+      //transition: transform 10s ease-in-out 0.1s;
+      //transform: rotateY(360deg);
     }
   }
 

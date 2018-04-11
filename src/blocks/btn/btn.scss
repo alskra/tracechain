@@ -5,6 +5,8 @@
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   display: inline-flex;
   vertical-align: top;
   justify-content: center;
@@ -47,6 +49,24 @@
       }
       &:active {
         background: darken($color-primary, 10%);
+      }
+    }
+  }
+
+  &--simple {
+    font-size: 12px;
+    line-height: 19px;
+    color: white;
+    text-transform: uppercase;
+    #{$b}__ico {
+      width: 19px;
+      height: 19px;
+      transform: scale((15/19));
+      margin-right: 4px;
+    }
+    @include not-disabled {
+      &:hover {
+        //color: $color-link;
       }
     }
   }

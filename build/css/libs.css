@@ -12051,8 +12051,16 @@ select.selectpicker {
   width: 1.15375em;
   height: 1em
 }
+.isvg-block {
+  width: 1em;
+  height: 1em
+}
 .isvg-buy {
   width: 1em;
+  height: 1em
+}
+.isvg-copy {
+  width: 0.93284em;
   height: 1em
 }
 .isvg-dialog {
@@ -12094,7 +12102,10 @@ select.selectpicker {
 .color-link {
   color: #99ceff
 }
-.color-warning {
+.color-success {
+  color: #2cc786
+}
+.color-danger {
   color: #fb5e5b
 }
 .overflow-hidden {

@@ -35,5 +35,74 @@ include ../blocks/menu-user/menu-user
                 +e.BUTTON.__btn(tabindex='-1')
                   +isvg#search
       .container-fluid
-
+        +b.info-box
+          +e.__head
+            +e.__head-col--1.col-6
+              +e.__head-col-row.row
+                .col-auto.flex-shrink-1.align-self-center
+                  +e.__title Block hash
+                .col-auto.flex-shrink-1.align-self-center
+                  +b.BUTTON.btn--simple.__copy-hash(type='button')
+                    +isvg#copy.__ico
+                    +e.SPAN.__lbl Copy
+              +e.__hash
+                +isvg#block.__hash-ico
+                +e.__hash-txt 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+            +e.__head-col--2.col-3
+              +e.__head-col-row.row
+                .col-auto.flex-shrink-1.align-self-center
+                  +e.__title Block id
+              +e.__num 706
+            +e.__head-col--3.col-3
+              +e.__head-col-row.row
+                .col-auto.flex-shrink-1.align-self-center
+                  +e.__title Transaction count
+              +e.__num 3
+          +e.__body
+            .overflow-x-auto.mx-10-inv
+              +b.TABLE.table-data--transactions
+                thead
+                  tr
+                    th Hash
+                    th Age
+                    th From
+                    th To
+                    th Value
+                    th Status
+                tbody
+                  tr
+                    td
+                      a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      +e.__warning
+                        +isvg#info.__warning-ico
+                    td 16&nbsp;hours&nbsp;ago
+                    td.text-truncate
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 20
+                    td
+                      span.color-success Success
+                  tr
+                    td
+                      a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 18&nbsp;hours&nbsp;ago
+                    td.text-truncate
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 0
+                    td
+                      span.color-danger Error
+                  tr
+                    td
+                      a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 20.03.2018
+                    td.text-truncate
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td
+                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                    td 30
+                    td
+                      span.color-success Success
   +footer.__footer
