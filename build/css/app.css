@@ -358,9 +358,11 @@
   font-weight: 500;
   font-size: 0.75rem;
   line-height: 0.875rem;
-  color: #39c948;
   text-align: center;
   text-transform: uppercase
+}
+.info-box__badge--success {
+  color: #39c948
 }
 .info-box__badge-ico {
   display: block;

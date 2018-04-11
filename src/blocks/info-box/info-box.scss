@@ -65,9 +65,12 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: $color-success-1;
     text-align: center;
     text-transform: uppercase;
+
+    &--success {
+      color: $color-success-1;
+    }
 
     &-ico {
       display: block;
