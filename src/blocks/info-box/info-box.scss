@@ -81,6 +81,13 @@
     & + & {
       border-top: 1px solid rgba($color-link, 0.3);
     }
+    a:not(.tabs__nav-item) {
+      color: $color-link;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
 
     &--bg-light {
       background: rgba(#235D91, 0.15);

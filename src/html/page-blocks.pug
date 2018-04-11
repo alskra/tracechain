@@ -27,8 +27,9 @@ include ../blocks/menu-user/menu-user
           .row
             .col-7.align-self-center
               +e.H2.__location
-                +e.A.__back(href=js): +isvg#arrow-l.__back-ico
-                | Blocks
+                a(href=js)
+                  +e.SPAN.__back: +isvg#arrow-l.__back-ico
+                  | Blocks
             .col-5
               +b.FORM.form-search.__search(action='')
                 +e.INPUT.__input(type='text' placeholder='Search by Address / Txhash / Block / Token / Ens' autocomplete='off')

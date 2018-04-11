@@ -27,8 +27,9 @@ include ../blocks/menu-user/menu-user
           .row
             .col-7.align-self-center
               +e.H2.__location
-                +e.A.__back(href=js): +isvg#arrow-l.__back-ico
-                | Transaction info
+                a(href=js)
+                  +e.SPAN.__back: +isvg#arrow-l.__back-ico
+                  | Transaction info
             .col-5
               +b.FORM.form-search.__search(action='')
                 +e.INPUT.__input(type='text' placeholder='Search by Address / Txhash / Block / Token / Ens' autocomplete='off')
@@ -78,10 +79,10 @@ include ../blocks/menu-user/menu-user
                 +e.DL.__dl
                   dt From
                   dd
-                    span.color-link 0x0029127894e035914a031b79c55a874567f23a7263cec6ce67
+                    a(href=js) 0x0029127894e035914a031b79c55a874567f23a7263cec6ce67
                   dt To
                   dd
-                    span.color-link 0x00bfa654af2e24ba1faea7498a77c732e26fd105b9c7739d44
+                    a(href=js) 0x00bfa654af2e24ba1faea7498a77c732e26fd105b9c7739d44
               .col-6
                 .row.mb-20
                   +e.TABLE.__table
@@ -103,7 +104,7 @@ include ../blocks/menu-user/menu-user
                 +e.DL.__dl
                   dt Block hash
                   dd
-                    span.color-link 2a488eaa519cbca8b1930afa0c65f3a9d31ea2b70555170776b04044128b3ac5
+                    a(href=js) 2a488eaa519cbca8b1930afa0c65f3a9d31ea2b70555170776b04044128b3ac5
                     +b.msg--warning
                       +isvg#info.__ico
                       +e.__txt Warning! Error encountered during contract execution [Out of gas]

@@ -27,8 +27,9 @@ include ../blocks/menu-user/menu-user
           .row
             .col-7.align-self-center
               +e.H2.__location
-                +e.A.__back(href=js): +isvg#arrow-l.__back-ico
-                | Block info
+                a(href=js)
+                  +e.SPAN.__back: +isvg#arrow-l.__back-ico
+                  | Block info
             .col-5
               +b.FORM.form-search.__search(action='')
                 +e.INPUT.__input(type='text' placeholder='Search by Address / Txhash / Block / Token / Ens' autocomplete='off')
@@ -77,9 +78,9 @@ include ../blocks/menu-user/menu-user
                         +isvg#info.__warning-ico
                     td 16&nbsp;hours&nbsp;ago
                     td.text-truncate
-                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
                     td
-                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
                     td 20
                     td
                       span.color-success Success
@@ -88,9 +89,9 @@ include ../blocks/menu-user/menu-user
                       a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
                     td 18&nbsp;hours&nbsp;ago
                     td.text-truncate
-                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
                     td
-                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
                     td 0
                     td
                       span.color-danger Error
@@ -99,9 +100,9 @@ include ../blocks/menu-user/menu-user
                       a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
                     td 20.03.2018
                     td.text-truncate
-                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
                     td
-                      span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                      a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
                     td 30
                     td
                       span.color-success Success
