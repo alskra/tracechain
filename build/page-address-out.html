@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="page no-js" lang="en">
   <head>
-    <title>Transaction info - TraceChain</title>
+    <title>Block info - TraceChain</title>
     <!-- Meta-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1000" />
@@ -156,7 +156,7 @@
                       <svg class="isvg-arrow-l section__back-ico" role="img">
                         <use xlink:href="#isvg-arrow-l"></use>
                       </svg>
-                    </a>Transaction info</h2>
+                    </a>Address</h2>
                 </div>
                 <div class="col-5">
                   <form class="form-search section__search" action="">
@@ -177,7 +177,7 @@
                 <div class="info-box__head-col info-box__head-col--1 col-6">
                   <div class="info-box__head-col-row row">
                     <div class="col-auto flex-shrink-1 align-self-center">
-                      <div class="info-box__title">Transaction hash</div>
+                      <div class="info-box__title">Address</div>
                     </div>
                     <div class="col-auto flex-shrink-1 align-self-center">
                       <button class="btn btn--simple info-box__copy-hash" type="button">
@@ -187,109 +187,107 @@
                         <span class="btn__lbl">Copy</span>
                       </button>
                     </div>
+                    <div class="col-auto flex-shrink-1 ml-auto">
+                      <select class="select-outline">
+                        <option>Type: OUT</option>
+                        <option>Type: IN</option>
+                      </select>
+                    </div>
                   </div>
                   <div class="info-box__hash">
-                    <svg class="isvg-transaction info-box__hash-ico" role="img">
-                      <use xlink:href="#isvg-transaction"></use>
-                    </svg>
-                    <div class="info-box__hash-txt">6fb8cf6d28b50efcc5c124d1d7e3a8dbba47215964b59e966d3a7f1d56a7feda</div>
-                  </div>
-                </div>
-                <div class="info-box__head-col info-box__head-col--2 col-4 d-flex flex-column justify-content-center">
-                  <ul class="list-log">
-                    <li class="list-log__li">
-                      <span class="list-log__li-head">
-                        <svg class="isvg-flag list-log__li-ico" role="img">
-                          <use xlink:href="#isvg-flag"></use>
-                        </svg>Generated:&nbsp;</span>March 13, 2018, 5:55 pm</li>
-                    <li class="list-log__li">
-                      <span class="list-log__li-head">
-                        <svg class="isvg-received list-log__li-ico" role="img">
-                          <use xlink:href="#isvg-received"></use>
-                        </svg>Received:&nbsp;</span>March 13, 2018, 5:55 pm</li>
-                    <li class="list-log__li">
-                      <span class="list-log__li-head">
-                        <svg class="isvg-block list-log__li-ico" role="img">
-                          <use xlink:href="#isvg-block"></use>
-                        </svg>In Block:&nbsp;</span>March 13, 2018, 5:55 pm</li>
-                  </ul>
-                </div>
-                <div class="info-box__head-col info-box__head-col--3 col-2 d-flex flex-column justify-content-center">
-                  <div class="info-box__badge info-box__badge--success">
-                    <svg class="isvg-success info-box__badge-ico" role="img">
-                      <use xlink:href="#isvg-success"></use>
-                    </svg>Success</div>
-                  <div class="info-box__badge info-box__badge--error">
-                    <svg class="isvg-info info-box__badge-ico" role="img">
-                      <use xlink:href="#isvg-info"></use>
-                    </svg>Error</div>
-                </div>
-              </div>
-              <div class="info-box__body">
-                <div class="row">
-                  <div class="col-6">
-                    <dl class="info-box__dl">
-                      <dt>From</dt>
-                      <dd>
-                        <span class="color-link">0x0029127894e035914a031b79c55a874567f23a7263cec6ce67</span>
-                      </dd>
-                      <dt>To</dt>
-                      <dd>
-                        <span class="color-link">0x00bfa654af2e24ba1faea7498a77c732e26fd105b9c7739d44</span>
-                      </dd>
-                    </dl>
-                  </div>
-                  <div class="col-6">
-                    <div class="row mb-20">
-                      <table class="info-box__table">
-                        <thead>
-                          <tr>
-                            <th>Fee</th>
-                            <th>Value</th>
-                            <th>Block num</th>
-                            <th>Transaction index (in block)</th>
-                            <th>Nonce</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>
-                              <span class="color-link">708</span>
-                            </td>
-                            <td>1</td>
-                            <td>55</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="info-box__hash-ico">
+                      <img src="upload/image.png" />
                     </div>
-                    <dl class="info-box__dl">
-                      <dt>Block hash</dt>
-                      <dd>
-                        <span class="color-link">2a488eaa519cbca8b1930afa0c65f3a9d31ea2b70555170776b04044128b3ac5</span>
-                        <div class="msg msg--warning">
-                          <svg class="isvg-info msg__ico" role="img">
-                            <use xlink:href="#isvg-info"></use>
-                          </svg>
-                          <div class="msg__txt">Warning! Error encountered during contract execution [Out of gas]</div>
-                        </div>
-                      </dd>
-                    </dl>
+                    <div class="info-box__hash-txt">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</div>
                   </div>
+                </div>
+                <div class="info-box__head-col info-box__head-col--2 col-3">
+                  <div class="info-box__head-col-row row">
+                    <div class="col-auto flex-shrink-1 align-self-center">
+                      <div class="info-box__title">#MHC Balance</div>
+                    </div>
+                  </div>
+                  <div class="info-box__num">457.00</div>
+                </div>
+                <div class="info-box__head-col info-box__head-col--3 col-3">
+                  <div class="info-box__head-col-row row">
+                    <div class="col-auto flex-shrink-1 align-self-center">
+                      <div class="info-box__title">Transaction count</div>
+                    </div>
+                  </div>
+                  <div class="info-box__num">6</div>
                 </div>
               </div>
               <div class="info-box__body">
-                <dl class="info-box__dl">
-                  <dt>Data</dt>
-                  <dd>NGUzOWJiMzc2ZWExOWVmMDgzMmE3OTk1ODVmMjg3YzUxYTU4NzQ3MGI2MzcwODBkMTY1ZWRiYjA5NjYxOTk1Zg</dd>
-                  <dt>Decoded data</dt>
-                  <dd>4e39bb376ea19ef0832a799585f287c51a587470b637080d165edbb09661995f</dd>
-                  <dt>Signature</dt>
-                  <dd>0x304402206eed235e6300504131e0fbea5655d8191779880ebcd5ce73f2e8dbe2031f232b02201baa6e561db2d5212dda05b5908f5bf5e636d62cf20c364bb926ae300c9d59b4</dd>
-                  <dt>Public key</dt>
-                  <dd>0x3059301306072a8648ce3d020106082a8648ce3d030107034200047a8ffbb5b9ee5779bffa6bbc40c8d0e9e17139703f7e3ce812d0b2d6d500d9cb2754534700e60824ef1cc0bf1650f27c5d50c6a9ccab5f4341c882775c6247d3</dd>
-                </dl>
+                <div class="overflow-x-auto mx-10-inv">
+                  <table class="table-data table-data--address">
+                    <thead>
+                      <tr>
+                        <th>Transaction hash</th>
+                        <th>Age</th>
+                        <th>From</th>
+                        <th>Type</th>
+                        <th>To</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a href="javascript:">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</a>
+                          <div class="table-data__warning">
+                            <svg class="isvg-info table-data__warning-ico" role="img">
+                              <use xlink:href="#isvg-info"></use>
+                            </svg>
+                          </div>
+                        </td>
+                        <td>16&nbsp;hours&nbsp;ago</td>
+                        <td class="text-truncate">
+                          <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                        </td>
+                        <td>
+                          <span class="text-uppercase">Out</span>
+                        </td>
+                        <td>
+                          <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                        </td>
+                        <td>20</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="javascript:">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</a>
+                        </td>
+                        <td>18&nbsp;hours&nbsp;ago</td>
+                        <td class="text-truncate">
+                          <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                        </td>
+                        <td>
+                          <span class="text-uppercase">Out</span>
+                        </td>
+                        <td>
+                          <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                        </td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="javascript:">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</a>
+                        </td>
+                        <td>20.03.2018</td>
+                        <td class="text-truncate">
+                          <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                        </td>
+                        <td>
+                          <span class="text-uppercase">Out</span>
+                        </td>
+                        <td>
+                          <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                        </td>
+                        <td>30</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
