@@ -139,7 +139,7 @@
   max-width: 80rem
 }
 .content-box {
-  padding: 2.5rem;
+  padding: 1.875rem 2.5rem;
   background: rgba(35, 93, 145, 0.3)
 }
 .content .h1,
@@ -381,14 +381,13 @@
   font-size: 0.75rem;
   line-height: 1.16667;
   word-wrap: break-word;
-  padding: 2.5rem;
+  padding: 1.875rem 2.5rem;
   background: rgba(35, 93, 145, 0.3)
 }
 .info-box__body + .info-box__body {
   border-top: 0.0625rem solid rgba(153, 206, 255, 0.3)
 }
 .info-box__body--bg-light {
-  padding: 1.5625rem 2.5rem;
   background: rgba(35, 93, 145, 0.15)
 }
 .info-box__badge {

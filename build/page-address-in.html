@@ -219,7 +219,7 @@
                 </div>
               </div>
               <div class="info-box__body info-box__body--bg-light">
-                <div class="tabs mt-10 mb-25">
+                <div class="tabs">
                   <nav class="tabs__nav nav">
                     <a class="tabs__nav-item active" href="#transactions" data-toggle="tab">Transactions</a>
                     <a class="tabs__nav-item" href="#internal-transactions" data-toggle="tab">Internal Transactions</a>
@@ -230,7 +230,7 @@
                   </nav>
                   <div class="tabs__content">
                     <div class="tabs__content-item fade show active" id="transactions">
-                      <div class="content-box">
+                      <div class="content-box mb-25">
                         <div class="overflow-x-auto mx-10-inv">
                           <table class="table-data table-data--address">
                             <thead>
@@ -301,6 +301,42 @@
                           </table>
                         </div>
                       </div>
+                      <nav class="pagination">
+                        <ul class="pagination__inner">
+                          <li class="pagination__item">
+                            <span class="pagination__link pagination__link--disabled">
+                              <svg class="isvg-angle-d pagination__ico pagination__ico--prev" role="img">
+                                <use xlink:href="#isvg-angle-d"></use>
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="pagination__item">
+                            <span class="pagination__link pagination__link--active">1</span>
+                          </li>
+                          <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:">2</a>
+                          </li>
+                          <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:">3</a>
+                          </li>
+                          <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:">4</a>
+                          </li>
+                          <li class="pagination__item">
+                            <span class="pagination__link pagination__link--hellip">&hellip;</span>
+                          </li>
+                          <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:">1425</a>
+                          </li>
+                          <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:">
+                              <svg class="isvg-angle-d pagination__ico pagination__ico--next" role="img">
+                                <use xlink:href="#isvg-angle-d"></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
                     </div>
                     <div class="tabs__content-item fade" id="internal-transactions">
                       <div class="content-box">Internal Transactions</div>
@@ -341,42 +377,6 @@
                     </div>
                   </div>
                 </div>
-                <nav class="pagination">
-                  <ul class="pagination__inner">
-                    <li class="pagination__item">
-                      <span class="pagination__link pagination__link--disabled">
-                        <svg class="isvg-angle-d pagination__ico pagination__ico--prev" role="img">
-                          <use xlink:href="#isvg-angle-d"></use>
-                        </svg>
-                      </span>
-                    </li>
-                    <li class="pagination__item">
-                      <span class="pagination__link pagination__link--active">1</span>
-                    </li>
-                    <li class="pagination__item">
-                      <a class="pagination__link" href="javascript:">2</a>
-                    </li>
-                    <li class="pagination__item">
-                      <a class="pagination__link" href="javascript:">3</a>
-                    </li>
-                    <li class="pagination__item">
-                      <a class="pagination__link" href="javascript:">4</a>
-                    </li>
-                    <li class="pagination__item">
-                      <span class="pagination__link pagination__link--hellip">&hellip;</span>
-                    </li>
-                    <li class="pagination__item">
-                      <a class="pagination__link" href="javascript:">1425</a>
-                    </li>
-                    <li class="pagination__item">
-                      <a class="pagination__link" href="javascript:">
-                        <svg class="isvg-angle-d pagination__ico pagination__ico--next" role="img">
-                          <use xlink:href="#isvg-angle-d"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
               </div>
             </div>
           </div>

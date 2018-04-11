@@ -76,14 +76,13 @@
     font-size: 12px;
     line-height: (14/12);
     word-wrap: break-word;
-    padding: 40px;
+    padding: 30px 40px;
     background: rgba(#235D91, 0.3);
     & + & {
       border-top: 1px solid rgba($color-link, 0.3);
     }
 
     &--bg-light {
-      padding: 25px 40px;
       background: rgba(#235D91, 0.15);
     }
   }

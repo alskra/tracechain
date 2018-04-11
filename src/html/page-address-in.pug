@@ -64,7 +64,7 @@ include ../blocks/menu-user/menu-user
                   +e.__title Transaction count
               +e.__num 6
           +e.__body--bg-light
-            +b.tabs.mt-10.mb-25
+            +b.tabs
               +e.NAV.__nav.nav
                 +e.A.__nav-item.active(href='#transactions' data-toggle='tab') Transactions
                 +e.A.__nav-item(href='#internal-transactions' data-toggle='tab') Internal Transactions
@@ -74,7 +74,7 @@ include ../blocks/menu-user/menu-user
                 +e.A.__nav-item(href='#comments' data-toggle='tab') Сomments
               +e.__content
                 +e.__content-item.fade.show.active#transactions
-                  +b.content-box
+                  +b.content-box.mb-25
                     .overflow-x-auto.mx-10-inv
                       +b.TABLE.table-data--address
                         thead
@@ -121,6 +121,26 @@ include ../blocks/menu-user/menu-user
                             td
                               span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
                             td 30
+                  +b.NAV.pagination
+                    +e.UL.__inner
+                      +e.LI.__item
+                        +e.SPAN.__link--disabled
+                          +isvg#angle-d.__ico--prev
+                      +e.LI.__item
+                        +e.SPAN.__link--active 1
+                      +e.LI.__item
+                        +e.A.__link(href=js) 2
+                      +e.LI.__item
+                        +e.A.__link(href=js) 3
+                      +e.LI.__item
+                        +e.A.__link(href=js) 4
+                      +e.LI.__item
+                        +e.SPAN.__link--hellip &hellip;
+                      +e.LI.__item
+                        +e.A.__link(href=js) 1425
+                      +e.LI.__item
+                        +e.A.__link(href=js)
+                          +isvg#angle-d.__ico--next
                 +e.__content-item.fade#internal-transactions
                   +b.content-box Internal Transactions
                 +e.__content-item.fade#token-transfer
@@ -156,24 +176,4 @@ include ../blocks/menu-user/menu-user
                   +b.content-box Contract State
                 +e.__content-item.fade#comments
                   +b.content-box Сomments
-            +b.NAV.pagination
-              +e.UL.__inner
-                +e.LI.__item
-                  +e.SPAN.__link--disabled
-                    +isvg#angle-d.__ico--prev
-                +e.LI.__item
-                  +e.SPAN.__link--active 1
-                +e.LI.__item
-                  +e.A.__link(href=js) 2
-                +e.LI.__item
-                  +e.A.__link(href=js) 3
-                +e.LI.__item
-                  +e.A.__link(href=js) 4
-                +e.LI.__item
-                  +e.SPAN.__link--hellip &hellip;
-                +e.LI.__item
-                  +e.A.__link(href=js) 1425
-                +e.LI.__item
-                  +e.A.__link(href=js)
-                    +isvg#angle-d.__ico--next
   +footer.__footer
