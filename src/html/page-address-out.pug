@@ -7,7 +7,7 @@ include ../blocks/footer/footer
 include ../blocks/breadcrumb/breadcrumb
 include ../blocks/menu-user/menu-user
 
-- $.title = `${pageList.blockInfo.title} - ${$.package.description}`;
+- $.title = `${pageList.addressOut.title} - ${$.package.description}`;
 
 +page
   +header.__header
@@ -47,7 +47,7 @@ include ../blocks/menu-user/menu-user
                     +e.SPAN.__lbl Copy
                 .col-auto.flex-shrink-1.ml-auto
                   +b.SELECT.select-outline
-                    option Type: OUT
+                    option(selected='') Type: OUT
                     option Type: IN
               +e.__hash
                 +e.__hash-ico

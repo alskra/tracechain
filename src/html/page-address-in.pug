@@ -1,0 +1,175 @@
+include helpers/variables
+include helpers/mixins
+
+include ../blocks/page/page
+include ../blocks/header/header
+include ../blocks/footer/footer
+include ../blocks/breadcrumb/breadcrumb
+include ../blocks/menu-user/menu-user
+
+- $.title = `${pageList.addressIn.title} - ${$.package.description}`;
+
++page
+  +header.__header
+  +e.__main
+    +b.SECTION.section
+      +e.HEADER.__header
+        .container-fluid
+          .row.mb-40.align-items-baseline
+            .col-8
+              .row.mx-25-inv.align-items-baseline
+                .col-auto.px-25.mw-100
+                  +b.H1.title.__title #[strong Trace]Chain
+                .col-auto.px-25.mw-100
+                  +breadcrumb(['Home', 'Blocks', 'Transactions'], 2).__breadcrumb
+            .col-4.d-flex.flex-column.align-items-end
+              +menu-user.__menu-user.mw-100
+          .row
+            .col-7.align-self-center
+              +e.H2.__location
+                +e.A.__back(href=js): +isvg#arrow-l.__back-ico
+                | Address
+            .col-5
+              +b.FORM.form-search.__search(action='')
+                +e.INPUT.__input(type='text' placeholder='Search by Address / Txhash / Block / Token / Ens' autocomplete='off')
+                +e.BUTTON.__btn(tabindex='-1')
+                  +isvg#search
+      .container-fluid
+        +b.info-box
+          +e.__head
+            +e.__head-col--1.col-6
+              +e.__head-col-row.row
+                .col-auto.flex-shrink-1.align-self-center
+                  +e.__title Address
+                .col-auto.flex-shrink-1.align-self-center
+                  +b.BUTTON.btn--simple.__copy-hash(type='button')
+                    +isvg#copy.__ico
+                    +e.SPAN.__lbl Copy
+                .col-auto.flex-shrink-1.ml-auto
+                  +b.SELECT.select-outline
+                    option Type: OUT
+                    option(selected='') Type: IN
+              +e.__hash
+                +e.__hash-ico
+                  img(src='upload/image 2.png')
+                +e.__hash-txt 0x0029127894e035914a031b79c55a874567f23a7263cec6c039
+            +e.__head-col--2.col-3
+              +e.__head-col-row.row
+                .col-auto.flex-shrink-1.align-self-center
+                  +e.__title #MHC Balance
+              +e.__num 1,578.00
+            +e.__head-col--3.col-3
+              +e.__head-col-row.row
+                .col-auto.flex-shrink-1.align-self-center
+                  +e.__title Transaction count
+              +e.__num 6
+          +e.__body--bg-light
+            +b.tabs.mt-10.mb-25
+              +e.NAV.__nav.nav
+                +e.A.__nav-item.active(href='#transactions' data-toggle='tab') Transactions
+                +e.A.__nav-item(href='#internal-transactions' data-toggle='tab') Internal Transactions
+                +e.A.__nav-item(href='#token-transfer' data-toggle='tab') Token Transfer
+                +e.A.__nav-item(href='#contract-code' data-toggle='tab') Contract Code
+                +e.A.__nav-item(href='#contract-state' data-toggle='tab') Contract State
+                +e.A.__nav-item(href='#comments' data-toggle='tab') Сomments
+              +e.__content
+                +e.__content-item.fade.show.active#transactions
+                  +b.content-box
+                    .overflow-x-auto.mx-10-inv
+                      +b.TABLE.table-data--address
+                        thead
+                          tr
+                            th Transaction hash
+                            th Age
+                            th From
+                            th Type
+                            th To
+                            th Value
+                        tbody
+                          tr
+                            td
+                              a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                              +e.__warning
+                                +isvg#info.__warning-ico
+                            td 16&nbsp;hours&nbsp;ago
+                            td.text-truncate
+                              span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                            td
+                              span.text-uppercase In
+                            td
+                              span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                            td 20
+                          tr
+                            td
+                              a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                            td 18&nbsp;hours&nbsp;ago
+                            td.text-truncate
+                              span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                            td
+                              span.text-uppercase In
+                            td
+                              span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                            td 0
+                          tr
+                            td
+                              a(href=js) 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                            td 20.03.2018
+                            td.text-truncate
+                              span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                            td
+                              span.text-uppercase In
+                            td
+                              span.color-link 8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755
+                            td 30
+                +e.__content-item.fade#internal-transactions Internal Transactions
+                +e.__content-item.fade#token-transfer Token Transfer
+                +e.__content-item.fade#contract-code
+                  +b.code-box
+                    pre
+                      code.
+                        class Contract {
+
+                            constructor() {
+                                this.ammount = 0;
+                                this.data = new Map;
+                                this.owner = msg.sender;
+                            }
+
+                            addPaymentInfo(key, value) {
+
+                                if (msg.sender == this.owner) {
+                                    let val = this.data.get(key);
+                                    let curValue = value;
+                                    if(val !== undefined && typeof val === 'number') {
+                                        value += val;
+                                    }
+                                    this.data.set(key, value);
+                                    this.ammount = this.ammount + curValue;
+                                } else {
+                                    throw true;
+                                }
+                            }
+                        }
+                +e.__content-item.fade#contract-state Contract State
+                +e.__content-item.fade#comments Сomments
+            +b.NAV.pagination
+              +e.UL.__inner
+                +e.LI.__item
+                  +e.SPAN.__link--disabled
+                    +isvg#angle-d.__ico--prev
+                +e.LI.__item
+                  +e.SPAN.__link--active 1
+                +e.LI.__item
+                  +e.A.__link(href=js) 2
+                +e.LI.__item
+                  +e.A.__link(href=js) 3
+                +e.LI.__item
+                  +e.A.__link(href=js) 4
+                +e.LI.__item
+                  +e.SPAN.__link--hellip &hellip;
+                +e.LI.__item
+                  +e.A.__link(href=js) 1425
+                +e.LI.__item
+                  +e.A.__link(href=js)
+                    +isvg#angle-d.__ico--next
+  +footer.__footer

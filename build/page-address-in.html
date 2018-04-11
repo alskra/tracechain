@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="page no-js" lang="en">
   <head>
-    <title>Address Out - TraceChain</title>
+    <title>Address In - TraceChain</title>
     <!-- Meta-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1000" />
@@ -189,16 +189,16 @@
                     </div>
                     <div class="col-auto flex-shrink-1 ml-auto">
                       <select class="select-outline">
-                        <option selected="">Type: OUT</option>
-                        <option>Type: IN</option>
+                        <option>Type: OUT</option>
+                        <option selected="">Type: IN</option>
                       </select>
                     </div>
                   </div>
                   <div class="info-box__hash">
                     <div class="info-box__hash-ico">
-                      <img src="upload/image.png" />
+                      <img src="upload/image 2.png" />
                     </div>
-                    <div class="info-box__hash-txt">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</div>
+                    <div class="info-box__hash-txt">0x0029127894e035914a031b79c55a874567f23a7263cec6c039</div>
                   </div>
                 </div>
                 <div class="info-box__head-col info-box__head-col--2 col-3">
@@ -207,7 +207,7 @@
                       <div class="info-box__title">#MHC Balance</div>
                     </div>
                   </div>
-                  <div class="info-box__num">457.00</div>
+                  <div class="info-box__num">1,578.00</div>
                 </div>
                 <div class="info-box__head-col info-box__head-col--3 col-3">
                   <div class="info-box__head-col-row row">
@@ -218,76 +218,157 @@
                   <div class="info-box__num">6</div>
                 </div>
               </div>
-              <div class="info-box__body">
-                <div class="overflow-x-auto mx-10-inv">
-                  <table class="table-data table-data--address">
-                    <thead>
-                      <tr>
-                        <th>Transaction hash</th>
-                        <th>Age</th>
-                        <th>From</th>
-                        <th>Type</th>
-                        <th>To</th>
-                        <th>Value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <a href="javascript:">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</a>
-                          <div class="table-data__warning">
-                            <svg class="isvg-info table-data__warning-ico" role="img">
-                              <use xlink:href="#isvg-info"></use>
-                            </svg>
-                          </div>
-                        </td>
-                        <td>16&nbsp;hours&nbsp;ago</td>
-                        <td class="text-truncate">
-                          <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                        </td>
-                        <td>
-                          <span class="text-uppercase">Out</span>
-                        </td>
-                        <td>
-                          <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                        </td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="javascript:">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</a>
-                        </td>
-                        <td>18&nbsp;hours&nbsp;ago</td>
-                        <td class="text-truncate">
-                          <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                        </td>
-                        <td>
-                          <span class="text-uppercase">Out</span>
-                        </td>
-                        <td>
-                          <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                        </td>
-                        <td>0</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="javascript:">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</a>
-                        </td>
-                        <td>20.03.2018</td>
-                        <td class="text-truncate">
-                          <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                        </td>
-                        <td>
-                          <span class="text-uppercase">Out</span>
-                        </td>
-                        <td>
-                          <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
-                        </td>
-                        <td>30</td>
-                      </tr>
-                    </tbody>
-                  </table>
+              <div class="info-box__body info-box__body--bg-light">
+                <div class="tabs mt-10 mb-25">
+                  <nav class="tabs__nav nav">
+                    <a class="tabs__nav-item active" href="#transactions" data-toggle="tab">Transactions</a>
+                    <a class="tabs__nav-item" href="#internal-transactions" data-toggle="tab">Internal Transactions</a>
+                    <a class="tabs__nav-item" href="#token-transfer" data-toggle="tab">Token Transfer</a>
+                    <a class="tabs__nav-item" href="#contract-code" data-toggle="tab">Contract Code</a>
+                    <a class="tabs__nav-item" href="#contract-state" data-toggle="tab">Contract State</a>
+                    <a class="tabs__nav-item" href="#comments" data-toggle="tab">Сomments</a>
+                  </nav>
+                  <div class="tabs__content">
+                    <div class="tabs__content-item fade show active" id="transactions">
+                      <div class="content-box">
+                        <div class="overflow-x-auto mx-10-inv">
+                          <table class="table-data table-data--address">
+                            <thead>
+                              <tr>
+                                <th>Transaction hash</th>
+                                <th>Age</th>
+                                <th>From</th>
+                                <th>Type</th>
+                                <th>To</th>
+                                <th>Value</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href="javascript:">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</a>
+                                  <div class="table-data__warning">
+                                    <svg class="isvg-info table-data__warning-ico" role="img">
+                                      <use xlink:href="#isvg-info"></use>
+                                    </svg>
+                                  </div>
+                                </td>
+                                <td>16&nbsp;hours&nbsp;ago</td>
+                                <td class="text-truncate">
+                                  <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                                </td>
+                                <td>
+                                  <span class="text-uppercase">In</span>
+                                </td>
+                                <td>
+                                  <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                                </td>
+                                <td>20</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href="javascript:">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</a>
+                                </td>
+                                <td>18&nbsp;hours&nbsp;ago</td>
+                                <td class="text-truncate">
+                                  <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                                </td>
+                                <td>
+                                  <span class="text-uppercase">In</span>
+                                </td>
+                                <td>
+                                  <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                                </td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href="javascript:">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</a>
+                                </td>
+                                <td>20.03.2018</td>
+                                <td class="text-truncate">
+                                  <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                                </td>
+                                <td>
+                                  <span class="text-uppercase">In</span>
+                                </td>
+                                <td>
+                                  <span class="color-link">8517f658ef627414305f79d7578a7e6299b32823af7d75cac8ac38224fac6755</span>
+                                </td>
+                                <td>30</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content-item fade" id="internal-transactions">Internal Transactions</div>
+                    <div class="tabs__content-item fade" id="token-transfer">Token Transfer</div>
+                    <div class="tabs__content-item fade" id="contract-code">
+                      <div class="code-box"><pre><code>class Contract {
+
+    constructor() {
+        this.ammount = 0;
+        this.data = new Map;
+        this.owner = msg.sender;
+    }
+
+    addPaymentInfo(key, value) {
+
+        if (msg.sender == this.owner) {
+            let val = this.data.get(key);
+            let curValue = value;
+            if(val !== undefined && typeof val === 'number') {
+                value += val;
+            }
+            this.data.set(key, value);
+            this.ammount = this.ammount + curValue;
+        } else {
+            throw true;
+        }
+    }
+}</code></pre></div>
+                    </div>
+                    <div class="tabs__content-item fade" id="contract-state">Contract State</div>
+                    <div class="tabs__content-item fade" id="comments">Сomments</div>
+                  </div>
                 </div>
+                <nav class="pagination">
+                  <ul class="pagination__inner">
+                    <li class="pagination__item">
+                      <span class="pagination__link pagination__link--disabled">
+                        <svg class="isvg-angle-d pagination__ico pagination__ico--prev" role="img">
+                          <use xlink:href="#isvg-angle-d"></use>
+                        </svg>
+                      </span>
+                    </li>
+                    <li class="pagination__item">
+                      <span class="pagination__link pagination__link--active">1</span>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="javascript:">2</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="javascript:">3</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="javascript:">4</a>
+                    </li>
+                    <li class="pagination__item">
+                      <span class="pagination__link pagination__link--hellip">&hellip;</span>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="javascript:">1425</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="javascript:">
+                        <svg class="isvg-angle-d pagination__ico pagination__ico--next" role="img">
+                          <use xlink:href="#isvg-angle-d"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>

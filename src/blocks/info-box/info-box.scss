@@ -66,8 +66,9 @@
   }
 
   &__num {
-    font-size: 56px;
+    font-size: 48px;
     line-height: 1;
+    word-wrap: break-word;
     margin-top: -5px;
   }
 
@@ -79,6 +80,11 @@
     background: rgba(#235D91, 0.3);
     & + & {
       border-top: 1px solid rgba($color-link, 0.3);
+    }
+
+    &--bg-light {
+      padding: 25px 40px;
+      background: rgba(#235D91, 0.15);
     }
   }
 

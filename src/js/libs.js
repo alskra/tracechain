@@ -7,4 +7,5 @@
 //=require ../../node_modules/bootstrap/js/dist/dropdown.js
 //=require ../../node_modules/bootstrap/js/dist/tooltip.js
 //=require ../../node_modules/bootstrap/js/dist/popover.js
+//=require ../../node_modules/bootstrap/js/dist/tab.js
 //=require ../../node_modules/bootstrap-select/dist/js/bootstrap-select.js
