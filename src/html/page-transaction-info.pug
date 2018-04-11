@@ -1,0 +1,74 @@
+include helpers/variables
+include helpers/mixins
+
+include ../blocks/page/page
+include ../blocks/header/header
+include ../blocks/footer/footer
+include ../blocks/breadcrumb/breadcrumb
+include ../blocks/menu-user/menu-user
+
+- $.title = `${pageList.transactionInfo.title} - ${$.package.description}`;
+
++page
+  +header.__header
+  +e.__main
+    +b.SECTION.section
+      +e.HEADER.__header
+        .container-fluid
+          .row.mb-40.align-items-baseline
+            .col-8
+              .row.mx-25-inv.align-items-baseline
+                .col-auto.px-25.mw-100
+                  +b.H1.title.__title #[strong Trace]Chain
+                .col-auto.px-25.mw-100
+                  +breadcrumb(['Home', 'Blocks', 'Transactions'], 1).__breadcrumb
+            .col-4.d-flex.flex-column.align-items-end
+              +menu-user.__menu-user.mw-100
+          .row
+            .col-7.align-self-center
+              +e.H2.__location
+                +e.A.__back(href=js): +isvg#arrow-l.__back-ico
+                | Transaction info
+            .col-5
+              +b.FORM.form-search.__search(action='')
+                +e.INPUT.__input(type='text' placeholder='Search by Address / Txhash / Block / Token / Ens' autocomplete='off')
+                +e.BUTTON.__btn(tabindex='-1')
+                  +isvg#search
+      .container-fluid
+        +b.info-box
+          +e.__head
+            +e.__head-col--1.col-6
+              +e.__head-col-row.row
+                .col-auto.flex-shrink-1.align-self-center
+                  +e.__title Transaction hash
+                .col-auto.flex-shrink-1.align-self-center
+                  +b.BUTTON.btn--simple.__copy-hash(type='button')
+                    +isvg#copy.__ico
+                    +e.SPAN.__lbl Copy
+              +e.__hash
+                +isvg#transaction.__hash-ico
+                +e.__hash-txt 6fb8cf6d28b50efcc5c124d1d7e3a8dbba47215964b59e966d3a7f1d56a7feda
+            +e.__head-col--2.col-4.d-flex.flex-column.justify-content-center
+              +b.UL.list-log
+                +e.LI.__li
+                  +e.SPAN.__li-head
+                    +isvg#flag.__li-ico
+                    | Generated:&nbsp;
+                  | March 13, 2018, 5:55 pm
+                +e.LI.__li
+                  +e.SPAN.__li-head
+                    +isvg#received.__li-ico
+                    | Received:&nbsp;
+                  | March 13, 2018, 5:55 pm
+                +e.LI.__li
+                  +e.SPAN.__li-head
+                    +isvg#block.__li-ico
+                    | In Block:&nbsp;
+                  | March 13, 2018, 5:55 pm
+            +e.__head-col--3.col-2.d-flex.flex-column.justify-content-center
+              +e.__badge
+                +isvg#success.__badge-ico
+                | Success
+          +e.__body
+          +e.__body
+  +footer.__footer

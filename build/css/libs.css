@@ -1428,7 +1428,7 @@ tbody.collapse.show {
   font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.1875;
+  line-height: 1.25;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -1536,7 +1536,7 @@ tbody.collapse.show {
   font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.1875;
+  line-height: 1.25;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -12067,6 +12067,10 @@ select.selectpicker {
   width: 1.03005em;
   height: 1em
 }
+.isvg-flag {
+  width: 1em;
+  height: 1em
+}
 .isvg-info {
   width: 0.91733em;
   height: 1em
@@ -12083,6 +12087,10 @@ select.selectpicker {
   width: 1.17592em;
   height: 1em
 }
+.isvg-received {
+  width: 1em;
+  height: 1em
+}
 .isvg-refresh {
   width: 1.29412em;
   height: 1em
@@ -12093,6 +12101,14 @@ select.selectpicker {
 }
 .isvg-settings {
   width: 1em;
+  height: 1em
+}
+.isvg-success {
+  width: 1.14242em;
+  height: 1em
+}
+.isvg-transaction {
+  width: 0.969em;
   height: 1em
 }
 .isvg-user {

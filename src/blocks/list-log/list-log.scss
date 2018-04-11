@@ -1,0 +1,27 @@
+.list-log {
+  font-size: 16px;
+  line-height: 20px;
+  @include list-unstyled;
+  margin: 0;
+
+  &__li {
+    & + & {
+      margin-top: 12px;
+    }
+
+    &-head {
+      color: $color-link;
+    }
+
+    &-ico {
+      vertical-align: top;
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      transform: scale((12/20));
+      &.isvg-block {
+        transform: scale((14/20));
+      }
+    }
+  }
+}

@@ -55,13 +55,13 @@
 
   &--simple {
     font-size: 12px;
-    line-height: 19px;
+    line-height: 20px;
     color: white;
     text-transform: uppercase;
     #{$b}__ico {
-      width: 19px;
-      height: 19px;
-      transform: scale((15/19));
+      width: 20px;
+      height: 20px;
+      transform: scale((15/20));
       margin-right: 4px;
     }
     @include not-disabled {
