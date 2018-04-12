@@ -30,7 +30,6 @@ var SelectLang = function() {
       }).selectpicker({
         style: bemC(b, 'toggle'),
         width: 'fit',
-        container: 'body',
         selectOnTab: true
       });
     },
@@ -54,7 +53,6 @@ var SelectLight = function() {
       }).selectpicker({
         style: bemC(b, 'toggle'),
         width: 'fit',
-        container: 'body',
         selectOnTab: true
       });
     },
@@ -78,7 +76,6 @@ var SelectOutline = function() {
       }).selectpicker({
         style: bemC(b, 'toggle'),
         width: 'fit',
-        container: 'body',
         selectOnTab: true
       });
     },

@@ -18,7 +18,7 @@ const SelectLight = function () {
             '<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#isvg-angle-d"></use>\n' +
             '</svg>')
           .next('.dropdown-menu').addClass(bemC(b, 'menu'));
-      }).selectpicker({style: bemC(b, 'toggle'), width: 'fit', container: 'body', selectOnTab: true});
+      }).selectpicker({style: bemC(b, 'toggle'), width: 'fit', selectOnTab: true});
     },
     bindUIActions: function () {
 
